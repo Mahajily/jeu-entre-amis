@@ -1,0 +1,690 @@
+﻿[
+    {
+        "id":  1,
+        "name":  "Zinédine Zidane",
+        "origin":  "🇫🇷 Français",
+        "category":  "sport",
+        "emoji":  "⚽",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est célèbre dans le monde du sport",
+                      "Il est franco-algérien",
+                      "Il a gagné la Coupe du Monde 1998",
+                      "Il a joué au Real Madrid",
+                      "Il est connu pour un coup de tête en finale de Coupe du Monde",
+                      "Son surnom est \u0027Zizou\u0027"
+                  ]
+    },
+    {
+        "id":  2,
+        "name":  "Emmanuel Macron",
+        "origin":  "🇫🇷 Français",
+        "category":  "politique",
+        "emoji":  "🏛️",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est dans la politique",
+                      "Il est français",
+                      "Il a été élu très jeune à son poste",
+                      "Sa femme s\u0027appelle Brigitte",
+                      "Il a fondé son propre parti politique",
+                      "Il est le Président de la République française"
+                  ]
+    },
+    {
+        "id":  3,
+        "name":  "Céline Dion",
+        "origin":  "🇫🇷 Française (Québec)",
+        "category":  "musique",
+        "emoji":  "🎤",
+        "hints":  [
+                      "C\u0027est une femme",
+                      "Elle est célèbre dans la musique",
+                      "Elle vient du Canada francophone",
+                      "Elle a chanté la chanson du film Titanic",
+                      "Sa chanson emblématique s\u0027appelle \u0027My Heart Will Go On\u0027",
+                      "Elle a eu une longue résidence à Las Vegas",
+                      "Elle est québécoise"
+                  ]
+    },
+    {
+        "id":  4,
+        "name":  "Kylian Mbappé",
+        "origin":  "🇫🇷 Français",
+        "category":  "sport",
+        "emoji":  "⚽",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est footballeur professionnel",
+                      "Il est français",
+                      "Il a été champion du monde 2018",
+                      "Il est né en 1998",
+                      "Il a joué au PSG avant de rejoindre un grand club espagnol",
+                      "Il est l\u0027un des joueurs les plus rapides du monde"
+                  ]
+    },
+    {
+        "id":  6,
+        "name":  "Victor Hugo",
+        "origin":  "🇫🇷 Français",
+        "category":  "culture",
+        "emoji":  "📚",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est célèbre dans la littérature",
+                      "Il est français du 19ème siècle",
+                      "Il a écrit un roman sur un personnage vivant dans Notre-Dame de Paris",
+                      "Il a aussi écrit Les Misérables",
+                      "Il a été exilé politiquement pendant plusieurs années",
+                      "Il est l\u0027auteur de \u0027Notre-Dame de Paris\u0027 et \u0027Les Misérables\u0027"
+                  ]
+    },
+    {
+        "id":  7,
+        "name":  "Thierry Henry",
+        "origin":  "🇫🇷 Français",
+        "category":  "sport",
+        "emoji":  "⚽",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est footballeur connu",
+                      "Il est français",
+                      "Il a joué à Arsenal et Barcelone",
+                      "Il était attaquant redoutable",
+                      "Il a remporté la Coupe du Monde 1998 avec la France",
+                      "Il est aujourd\u0027hui consultant football et entraîneur"
+                  ]
+    },
+    {
+        "id":  8,
+        "name":  "Daft Punk",
+        "origin":  "🇫🇷 Français",
+        "category":  "musique",
+        "emoji":  "🎵",
+        "hints":  [
+                      "Ce sont deux personnes",
+                      "Ils font de la musique électronique",
+                      "Ils sont français",
+                      "Ils portent toujours des casques de robots",
+                      "Leur album \u0027Random Access Memories\u0027 a eu un grand succès mondial",
+                      "Leur chanson \u0027Get Lucky\u0027 est mondialement connue",
+                      "Ils se sont séparés en 2021"
+                  ]
+    },
+    {
+        "id":  9,
+        "name":  "Napoleon Bonaparte",
+        "origin":  "🇫🇷 Français (Corse)",
+        "category":  "histoire",
+        "emoji":  "👑",
+        "hints":  [
+                      "C\u0027est une homme historique",
+                      "Il est lié à la France",
+                      "Il est né en Corse",
+                      "Il est devenu une figure militaire majeure",
+                      "Il a été couronné Empereur",
+                      "Il a été exilé sur une île",
+                      "Il est l\u0027Empereu des Français, célèbre pour ses conquêtes militaires"
+                  ]
+    },
+    {
+        "id":  10,
+        "name":  "Sophie Marceau",
+        "origin":  "🇫🇷 Française",
+        "category":  "cinema",
+        "emoji":  "🎬",
+        "hints":  [
+                      "C\u0027est une femme",
+                      "Elle est actrice",
+                      "Elle est française",
+                      "Elle a commencé sa carrière très jeune dans \u0027La Boum\u0027",
+                      "Elle a joué dans un film James Bond",
+                      "Elle est considérée comme l\u0027une des plus belles actrices françaises",
+                      "Son vrai prénom est Sophie Danièle Sylvie Maupu"
+                  ]
+    },
+    {
+        "id":  11,
+        "name":  "Bekoto (Mahaleo)",
+        "origin":  "🇲🇬 Malgache",
+        "category":  "musique",
+        "emoji":  "🎸",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est célèbre dans la musique malgache",
+                      "Il fait partie d\u0027un groupe légendaire",
+                      "Il est aussi médecin dans la vie",
+                      "Son groupe s\u0027appelle Mahaleo",
+                      "Mahaleo est le groupe de folk-rock malgache le plus emblématique",
+                      "Son nom complet est Rakotofiringa Bénédicte, dit Bekoto"
+                  ]
+    },
+    {
+        "id":  12,
+        "name":  "Rossy",
+        "origin":  "🇲🇬 Malgache",
+        "category":  "musique",
+        "emoji":  "🎵",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est musicien malgache",
+                      "Il joue d\u0027un instrument traditionnel malgache",
+                      "Il est connu internationalement pour la musique traditionnelle de Madagascar",
+                      "Il joue du valiha",
+                      "Il est considéré comme l\u0027ambassadeur de la musique malgache",
+                      "Son vrai nom est Rakotomalala Paul"
+                  ]
+    },
+    {
+        "id":  13,
+        "name":  "Andry Rajoelina",
+        "origin":  "🇲🇬 Malgache",
+        "category":  "politique",
+        "emoji":  "🏛️",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est dans la politique malgache",
+                      "Il a été maire d\u0027une grande ville",
+                      "Il a été impliqué dans un changement de pouvoir en 2009",
+                      "Il a été élu Président de la République de Madagascar",
+                      "Il a été maire d\u0027Antananarivo avant de devenir chef d\u0027état",
+                      "Il est l\u0027actuel Président de la République de Madagascar"
+                  ]
+    },
+    {
+        "id":  14,
+        "name":  "Hery Rajaonarimampianina",
+        "origin":  "🇲🇬 Malgache",
+        "category":  "politique",
+        "emoji":  "🏛️",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est dans la politique",
+                      "Il est malgache",
+                      "Il était expert financier avant d\u0027entrer en politique",
+                      "Il a été Ministre des Finances",
+                      "Il a été Président de la République de Madagascar entre 2014 et 2018",
+                      "Son nom est très long et difficile à prononcer"
+                  ]
+    },
+    {
+        "id":  15,
+        "name":  "Erick Manana",
+        "origin":  "🇲🇬 Malgache",
+        "category":  "musique",
+        "emoji":  "🎤",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est chanteur malgache",
+                      "Il chante en malagasy",
+                      "Sa voix est très connue à Madagascar",
+                      "Il fait partie du groupe Mahaleo",
+                      "Il est à la fois chanteur et médecin",
+                      "Il est surnommé \u0027Dadah\u0027 par ses proches"
+                  ]
+    },
+    {
+        "id":  16,
+        "name":  "Njakatiana",
+        "origin":  "🇲🇬 Malgache",
+        "category":  "musique",
+        "emoji":  "🎵",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est chanteur malgache moderne",
+                      "Il fait de la musique pop-soul en malagasy et français",
+                      "Il est très populaire auprès de la jeunesse malgache",
+                      "Il a sorti des albums à succès à Madagascar",
+                      "Sa musique mêle tradition et modernité",
+                      "Son nom complet est Njakatiana Rakotobe"
+                  ]
+    },
+    {
+        "id":  21,
+        "name":  "Barack Obama",
+        "origin":  "🇺🇸 Américain",
+        "category":  "politique",
+        "emoji":  "🏛️",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est dans la politique américaine",
+                      "Il est américain",
+                      "Il a été le premier Président afro-américain des États-Unis",
+                      "Il a reçu le Prix Nobel de la Paix",
+                      "Il a été Président entre 2009 et 2017",
+                      "Son slogan était \u0027Yes We Can\u0027"
+                  ]
+    },
+    {
+        "id":  22,
+        "name":  "Michael Jordan",
+        "origin":  "🇺🇸 Américain",
+        "category":  "sport",
+        "emoji":  "🏀",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est célèbre dans le sport",
+                      "Il est américain",
+                      "Il a joué au basketball",
+                      "Il a remporté 6 titres de champion NBA",
+                      "Il a joué avec les Chicago Bulls",
+                      "Il est considéré comme le plus grand basketteur de tous les temps"
+                  ]
+    },
+    {
+        "id":  23,
+        "name":  "Beyoncé",
+        "origin":  "🇺🇸 Américaine",
+        "category":  "musique",
+        "emoji":  "🎤",
+        "hints":  [
+                      "C\u0027est une femme",
+                      "Elle est chanteuse américaine",
+                      "Elle vient du Texas",
+                      "Elle a fait partie d\u0027un groupe de filles avant sa carrière solo",
+                      "Son groupe s\u0027appelait Destiny\u0027s Child",
+                      "Elle est mariée à un rappeur très célèbre",
+                      "Elle est surnommée \u0027Queen Bey\u0027"
+                  ]
+    },
+    {
+        "id":  24,
+        "name":  "Elon Musk",
+        "origin":  "🇺🇸 Américain (Afrique du Sud)",
+        "category":  "technologie",
+        "emoji":  "🚀",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est dans la technologie et les affaires",
+                      "Il est né en Afrique du Sud",
+                      "Il a fondé une entreprise de voitures électriques",
+                      "Il veut aller sur Mars",
+                      "Il a racheté un grand réseau social",
+                      "Il est PDG de Tesla et SpaceX"
+                  ]
+    },
+    {
+        "id":  25,
+        "name":  "Michael Jackson",
+        "origin":  "🇺🇸 Américain",
+        "category":  "musique",
+        "emoji":  "🎵",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est musicien américain",
+                      "Il a commencé à chanter enfant avec ses frères",
+                      "Il a un pas de danse très célèbre appelé le Moonwalk",
+                      "Son album \u0027Thriller\u0027 est l\u0027un des plus vendus au monde",
+                      "Il est surnommé le \u0027Roi de la Pop\u0027",
+                      "Il est décédé en 2009"
+                  ]
+    },
+    {
+        "id":  26,
+        "name":  "Oprah Winfrey",
+        "origin":  "🇺🇸 Américaine",
+        "category":  "media",
+        "emoji":  "📺",
+        "hints":  [
+                      "C\u0027est une femme",
+                      "Elle est dans les médias américains",
+                      "Elle est américaine",
+                      "Elle a animé un talk-show très célèbre pendant des années",
+                      "Elle est milliardaire",
+                      "Elle est connue pour sa générosité envers le public",
+                      "Son nom est devenu synonyme de talk-show et d\u0027empowerment féminin"
+                  ]
+    },
+    {
+        "id":  27,
+        "name":  "LeBron James",
+        "origin":  "🇺🇸 Américain",
+        "category":  "sport",
+        "emoji":  "🏀",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est sportif américain",
+                      "Il joue au basketball professionnel",
+                      "Il a joué pour les Cleveland Cavaliers, Miami Heat et les Lakers",
+                      "Il est souvent comparé à Michael Jordan",
+                      "Il est surnommé \u0027King James\u0027",
+                      "Il est considéré comme l\u0027un des meilleurs basketteurs de son époque"
+                  ]
+    },
+    {
+        "id":  28,
+        "name":  "Rihanna",
+        "origin":  "🇺🇸 Américaine (Barbade)",
+        "category":  "musique",
+        "emoji":  "🎤",
+        "hints":  [
+                      "C\u0027est une femme",
+                      "Elle est chanteuse",
+                      "Elle vient des Caraïbes",
+                      "Elle est originaire de la Barbade",
+                      "Elle a aussi lancé une marque de cosmétiques appelée Fenty",
+                      "Elle a assuré le show de la mi-temps du Super Bowl",
+                      "Sa chanson \u0027Umbrella\u0027 est mondialement connue"
+                  ]
+    },
+    {
+        "id":  29,
+        "name":  "Serena Williams",
+        "origin":  "🇺🇸 Américaine",
+        "category":  "sport",
+        "emoji":  "🎾",
+        "hints":  [
+                      "C\u0027est une femme",
+                      "Elle est sportive américaine",
+                      "Elle joue au tennis",
+                      "Elle a une sœur aussi très célèbre dans le tennis",
+                      "Elle a remporté 23 titres du Grand Chelem",
+                      "Elle est considérée comme la plus grande joueuse de tennis de tous les temps",
+                      "Sa sœur s\u0027appelle Venus Williams"
+                  ]
+    },
+    {
+        "id":  30,
+        "name":  "Taylor Swift",
+        "origin":  "🇺🇸 Américaine",
+        "category":  "musique",
+        "emoji":  "🎵",
+        "hints":  [
+                      "C\u0027est une femme",
+                      "Elle est chanteuse américaine",
+                      "Elle a commencé dans la musique country",
+                      "Elle est connue pour chanter ses ex dans ses chansons",
+                      "Elle a sorti un album appelé \u0027Eras Tour\u0027",
+                      "Ses fans s\u0027appellent les \u0027Swifties\u0027",
+                      "Elle a été l\u0027artiste la plus écoutée au monde plusieurs années de suite"
+                  ]
+    },
+    {
+        "id":  31,
+        "name":  "Donald Trump",
+        "origin":  "🇺🇸 Américain",
+        "category":  "politique",
+        "emoji":  "🏛️",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est en politique américaine",
+                      "Il était homme d\u0027affaires avant d\u0027entrer en politique",
+                      "Il est connu pour ses cheveux blonds particuliers",
+                      "Il a présenté une émission de téléréalité",
+                      "Il a été Président des États-Unis",
+                      "Son slogan était \u0027Make America Great Again\u0027"
+                  ]
+    },
+    {
+        "id":  32,
+        "name":  "Martin Luther King",
+        "origin":  "🇺🇸 Américain",
+        "category":  "histoire",
+        "emoji":  "✊",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est historiquement important aux États-Unis",
+                      "Il était pasteur",
+                      "Il a lutté pour les droits civiques des Noirs américains",
+                      "Il a prononcé un discours très célèbre commençant par \u0027I Have a Dream\u0027",
+                      "Il a reçu le Prix Nobel de la Paix en 1964",
+                      "Il a été assassiné en 1968"
+                  ]
+    },
+    {
+        "id":  33,
+        "name":  "Cristiano Ronaldo",
+        "origin":  "🌍 International",
+        "category":  "sport",
+        "emoji":  "⚽",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est footballeur",
+                      "Il est portugais",
+                      "Il a joué à Manchester United, Real Madrid et la Juventus",
+                      "Il joue actuellement en Arabie Saoudite",
+                      "Il est l\u0027un des deux meilleurs footballeurs de sa génération",
+                      "Son rival est Lionel Messi"
+                  ]
+    },
+    {
+        "id":  34,
+        "name":  "Lionel Messi",
+        "origin":  "🌍 International",
+        "category":  "sport",
+        "emoji":  "⚽",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est footballeur",
+                      "Il est argentin",
+                      "Il a passé la majorité de sa carrière au FC Barcelone",
+                      "Il a remporté la Coupe du Monde 2022 avec l\u0027Argentine",
+                      "Il joue actuellement aux États-Unis",
+                      "Il est considéré comme le meilleur footballeur de l\u0027histoire par beaucoup"
+                  ]
+    },
+    {
+        "id":  35,
+        "name":  "Bob Marley",
+        "origin":  "🌍 International",
+        "category":  "musique",
+        "emoji":  "🎵",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est musicien",
+                      "Il vient des Caraïbes",
+                      "Il est jamaïcain",
+                      "Il a popularisé un genre musical mondial",
+                      "Il est le roi du reggae",
+                      "Sa chanson \u0027No Woman No Cry\u0027 est iconique"
+                  ]
+    },
+    {
+        "id":  36,
+        "name":  "Albert Einstein",
+        "origin":  "🌍 International",
+        "category":  "science",
+        "emoji":  "🔬",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est scientifique",
+                      "Il est d\u0027origine allemande",
+                      "Il a développé une théorie révolutionnaire en physique",
+                      "Il est connu pour sa formule E=mc²",
+                      "Il a reçu le Prix Nobel de Physique",
+                      "Sa théorie s\u0027appelle la relativité"
+                  ]
+    },
+    {
+        "id":  37,
+        "name":  "Nelson Mandela",
+        "origin":  "🌍 International",
+        "category":  "histoire",
+        "emoji":  "✊",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est célèbre dans l\u0027histoire politique",
+                      "Il est sud-africain",
+                      "Il a combattu l\u0027apartheid",
+                      "Il a passé 27 ans en prison pour ses convictions",
+                      "Il a reçu le Prix Nobel de la Paix",
+                      "Il est devenu le premier Président noir d\u0027Afrique du Sud"
+                  ]
+    },
+    {
+        "id":  39,
+        "name":  "Dama (Mahaleo)",
+        "origin":  "🇲🇬 Malgache",
+        "category":  "musique",
+        "emoji":  "🎤",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est musicien malgache très connu",
+                      "Il fait partie du groupe le plus célèbre de Madagascar",
+                      "Il est le leader et voix principale du groupe",
+                      "Son groupe s\u0027appelle Mahaleo",
+                      "Il est aussi médecin",
+                      "Son vrai nom est Rakotondrabe Noël"
+                  ]
+    },
+    {
+        "id":  40,
+        "name":  "Lady Gaga",
+        "origin":  "🇺🇸 Américaine",
+        "category":  "musique",
+        "emoji":  "🎤",
+        "hints":  [
+                      "C\u0027est une femme",
+                      "Elle est chanteuse américaine",
+                      "Elle est connue pour ses tenues extravagantes",
+                      "Elle a joué dans un film avec Bradley Cooper",
+                      "Ce film s\u0027appelle A Star is Born",
+                      "Sa chanson \u0027Bad Romance\u0027 est mondialement connue",
+                      "Son vrai nom est Stefani Joanne Angelina Germanotta"
+                  ]
+    },
+    {
+        "id":  41,
+        "name":  "Roger Federer",
+        "origin":  "🌍 International",
+        "category":  "sport",
+        "emoji":  "🎾",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est sportif",
+                      "Il joue au tennis",
+                      "Il est suisse",
+                      "Il a remporté 20 titres du Grand Chelem",
+                      "Il est connu pour son style élégant sur le court",
+                      "Il est considéré comme l\u0027un des plus grands joueurs de l\u0027histoire du tennis"
+                  ]
+    },
+    {
+        "id":  42,
+        "name":  "Tupac Shakur",
+        "origin":  "🇺🇸 Américain",
+        "category":  "musique",
+        "emoji":  "🎤",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est musicien américain",
+                      "Il est rappeur",
+                      "Il est décédé très jeune",
+                      "Il est l\u0027une des icônes du rap américain des années 90",
+                      "Il a été retrouvé mort après une fusillade à Las Vegas",
+                      "Son nom de scène est aussi \u00272Pac\u0027"
+                  ]
+    },
+    {
+        "id":  43,
+        "name":  "Jackie Chan",
+        "origin":  "🌍 International",
+        "category":  "cinema",
+        "emoji":  "🎬",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est acteur",
+                      "Il vient d\u0027Asie",
+                      "Il est originaire de Hong Kong",
+                      "Il est connu pour ses cascades acrobatiques dans les films",
+                      "Il fait ses propres cascades sans doublure",
+                      "Il est célèbre dans les films d\u0027arts martiaux et de comédie"
+                  ]
+    },
+    {
+        "id":  44,
+        "name":  "Shakira",
+        "origin":  "🌍 International",
+        "category":  "musique",
+        "emoji":  "🎵",
+        "hints":  [
+                      "C\u0027est une femme",
+                      "Elle est chanteuse",
+                      "Elle est originaire d\u0027Amérique latine",
+                      "Elle est colombienne",
+                      "Elle est connue pour sa danse du ventre",
+                      "Sa chanson \u0027Hips Don\u0027t Lie\u0027 est très connue",
+                      "Elle a été en couple avec un footballeur célèbre du FC Barcelone"
+                  ]
+    },
+    {
+        "id":  45,
+        "name":  "Princess Diana",
+        "origin":  "🌍 International",
+        "category":  "histoire",
+        "emoji":  "👑",
+        "hints":  [
+                      "C\u0027est une femme",
+                      "Elle est liée à la famille royale britannique",
+                      "Elle est britannique",
+                      "Elle était connue pour sa grande compassion envers les démunis",
+                      "Elle était mariée au Prince Charles",
+                      "Elle est décédée dans un accident de voiture à Paris en 1997",
+                      "On l\u0027appelait la \u0027Princesse du Peuple\u0027"
+                  ]
+    },
+    {
+        "id":  47,
+        "name":  "Didier Drogba",
+        "origin":  "🌍 International",
+        "category":  "sport",
+        "emoji":  "⚽",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est footballeur",
+                      "Il vient d\u0027Afrique",
+                      "Il est ivoirien",
+                      "Il a joué pour Chelsea en Angleterre",
+                      "Il a marqué un but en finale de Ligue des Champions",
+                      "Il est considéré comme la légende du football africain"
+                  ]
+    },
+    {
+        "id":  48,
+        "name":  "Usain Bolt",
+        "origin":  "🌍 International",
+        "category":  "sport",
+        "emoji":  "🏃",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est athlète",
+                      "Il vient des Caraïbes",
+                      "Il est jamaïcain",
+                      "Il est spécialiste du sprint",
+                      "Il a remporté plusieurs médailles d\u0027or olympiques",
+                      "Il est l\u0027homme le plus rapide du monde, champion sur 100m et 200m"
+                  ]
+    },
+    {
+        "id":  49,
+        "name":  "Tom Hanks",
+        "origin":  "🇺🇸 Américain",
+        "category":  "cinema",
+        "emoji":  "🎬",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est acteur américain",
+                      "Il est très apprécié à Hollywood",
+                      "Il a joué dans Forrest Gump",
+                      "Il a joué dans Cast Away où il est seul sur une île déserte",
+                      "Il a remporté deux Oscars consécutifs",
+                      "Il est considéré comme l\u0027un des meilleurs acteurs américains"
+                  ]
+    },
+    {
+        "id":  50,
+        "name":  "Chadwick Boseman",
+        "origin":  "🇺🇸 Américain",
+        "category":  "cinema",
+        "emoji":  "🎬",
+        "hints":  [
+                      "C\u0027est une homme",
+                      "Il est acteur américain",
+                      "Il est afro-américain",
+                      "Il a joué le rôle d\u0027un super-héros Marvel",
+                      "Son personnage est le roi d\u0027un pays fictif africain appelé Wakanda",
+                      "Il est décédé en 2020 d\u0027un cancer",
+                      "Il est connu pour le rôle de Black Panther"
+                  ]
+    }
+]

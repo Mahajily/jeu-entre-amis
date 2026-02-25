@@ -20,7 +20,7 @@ const GAMES = [
     color: '#e84393',
     colorLight: 'rgba(232, 67, 147, 0.12)',
     colorBorder: 'rgba(232, 67, 147, 0.3)',
-    available: false,
+    available: true,
     modes: [
       { label: 'Soft', emoji: '🌸', color: '#00b894' },
       { label: 'Hot', emoji: '🔥', color: '#e17055' },
@@ -35,12 +35,23 @@ const GAMES = [
     color: '#00cec9',
     colorLight: 'rgba(0, 206, 201, 0.12)',
     colorBorder: 'rgba(0, 206, 201, 0.3)',
-    available: false,
+    available: true,
     modes: [
       { label: 'Soft', emoji: '🌸', color: '#00b894' },
       { label: 'Hot', emoji: '🔥', color: '#e17055' },
       { label: 'Super Hot', emoji: '💥', color: '#d63031' },
     ],
+  },
+  {
+    id: 'devine-qui',
+    title: 'Devine qui tu es',
+    emoji: '🤔',
+    description: 'Devine la célébrité collée sur ton front grâce aux indices du maître du jeu !',
+    color: '#f39c12',
+    colorLight: 'rgba(243, 156, 18, 0.12)',
+    colorBorder: 'rgba(243, 156, 18, 0.3)',
+    available: true,
+    modes: null,
   },
 ]
 

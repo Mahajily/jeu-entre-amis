@@ -3,6 +3,12 @@ import HomeScreen from './screens/HomeScreen'
 import SetupScreen from './games/undercover/screens/SetupScreen'
 import GameScreen from './games/undercover/screens/GameScreen'
 import ResultScreen from './games/undercover/screens/ResultScreen'
+import DevineSetupScreen from './games/devine-qui/screens/SetupScreen'
+import DevineGameScreen from './games/devine-qui/screens/GameScreen'
+import JamaisSetupScreen from './games/je-nai-jamais/screens/SetupScreen'
+import JamaisGameScreen from './games/je-nai-jamais/screens/GameScreen'
+import AvSetupScreen from './games/action-verite/screens/SetupScreen'
+import AvGameScreen from './games/action-verite/screens/GameScreen'
 
 export default function App() {
   const [screen, setScreen] = useState('home')   // 'home' | 'setup' | 'game' | 'result'
@@ -63,6 +69,36 @@ export default function App() {
         )}
       </div>
     )
+  }
+
+  // ── Devine qui tu es flow ──
+  if (activeGame === 'devine-qui') {
+    if (screen === 'setup') {
+      return <DevineSetupScreen onStart={startGame} onBack={goHome} />
+    }
+    if (screen === 'game') {
+      return <DevineGameScreen config={gameConfig} onEnd={endGame} onHome={goHome} />
+    }
+  }
+
+  // ── Je n'ai jamais flow ──
+  if (activeGame === 'je-nai-jamais') {
+    if (screen === 'setup') {
+      return <JamaisSetupScreen onStart={startGame} onBack={goHome} />
+    }
+    if (screen === 'game') {
+      return <JamaisGameScreen config={gameConfig} onEnd={endGame} onHome={goHome} />
+    }
+  }
+
+  // ── Action ou Vérité flow ──
+  if (activeGame === 'action-verite') {
+    if (screen === 'setup') {
+      return <AvSetupScreen onStart={startGame} onBack={goHome} />
+    }
+    if (screen === 'game') {
+      return <AvGameScreen config={gameConfig} onHome={goHome} />
+    }
   }
 
   return null

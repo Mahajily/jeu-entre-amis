@@ -90,10 +90,12 @@ export default function GameScreen({ config, onEnd, onQuit }) {
     }
     const nextAlive = updated.filter(p => p.alive).map(p => p.id)
     setRound(r => r + 1)
-    setSpeakOrder(shuffle(nextAlive))
+    setDistributeOrder(shuffle(nextAlive))
+    setViewIndex(0)
+    setWordVisible(false)
     setEliminatedId(null)
     setSelectedTarget(null)
-    setPhase('discuss')
+    setPhase('distribute')
   }
 
   /* ─── Render ─── */
