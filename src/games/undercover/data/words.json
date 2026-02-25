@@ -1,0 +1,1622 @@
+[
+  {
+    "civil": "Café",
+    "undercover": "Thé",
+    "civilHint": "Boisson chaude à base de grains torréfiés",
+    "undercoverHint": "Boisson chaude infusée à partir de feuilles"
+  },
+  {
+    "civil": "Soleil",
+    "undercover": "Lune",
+    "civilHint": "Étoile qui éclaire nos journées",
+    "undercoverHint": "Astre qui illumine nos nuits"
+  },
+  {
+    "civil": "Guitare",
+    "undercover": "Ukulélé",
+    "civilHint": "Instrument à cordes très populaire dans le rock",
+    "undercoverHint": "Petit instrument à cordes d'origine hawaïenne"
+  },
+  {
+    "civil": "Chien",
+    "undercover": "Loup",
+    "civilHint": "Animal domestique fidèle à l'homme",
+    "undercoverHint": "Canidé sauvage vivant en meute"
+  },
+  {
+    "civil": "Pizza",
+    "undercover": "Tarte flambée",
+    "civilHint": "Spécialité italienne avec tomate et mozzarella",
+    "undercoverHint": "Spécialité alsacienne avec crème et lardons"
+  },
+  {
+    "civil": "Football",
+    "undercover": "Rugby",
+    "civilHint": "Sport où l'on frappe un ballon rond avec les pieds",
+    "undercoverHint": "Sport où l'on porte un ballon ovale à la main"
+  },
+  {
+    "civil": "Cinéma",
+    "undercover": "Théâtre",
+    "civilHint": "Art du grand écran avec des films projetés",
+    "undercoverHint": "Art de la scène avec des acteurs en direct"
+  },
+  {
+    "civil": "Croissant",
+    "undercover": "Pain au chocolat",
+    "civilHint": "Viennoiserie en forme de lune feuilletée",
+    "undercoverHint": "Viennoiserie rectangulaire fourrée au cacao"
+  },
+  {
+    "civil": "Vélo",
+    "undercover": "Trottinette",
+    "civilHint": "Véhicule à deux roues avec des pédales",
+    "undercoverHint": "Véhicule à deux roues avec un plateau pour les pieds"
+  },
+  {
+    "civil": "Montagne",
+    "undercover": "Colline",
+    "civilHint": "Relief très élevé souvent enneigé au sommet",
+    "undercoverHint": "Petite élévation de terrain arrondie"
+  },
+  {
+    "civil": "Océan",
+    "undercover": "Mer",
+    "civilHint": "Immense étendue d'eau salée entre les continents",
+    "undercoverHint": "Étendue d'eau salée plus petite, souvent bordée de terres"
+  },
+  {
+    "civil": "Livre",
+    "undercover": "Magazine",
+    "civilHint": "Ouvrage relié contenant une histoire ou un savoir",
+    "undercoverHint": "Publication périodique illustrée sur divers sujets"
+  },
+  {
+    "civil": "Avion",
+    "undercover": "Hélicoptère",
+    "civilHint": "Aéronef à ailes fixes pour les longs trajets",
+    "undercoverHint": "Aéronef à hélices pouvant décoller verticalement"
+  },
+  {
+    "civil": "Chat",
+    "undercover": "Tigre",
+    "civilHint": "Félin domestique ronronnant sur le canapé",
+    "undercoverHint": "Grand félin rayé des jungles d'Asie"
+  },
+  {
+    "civil": "Chocolat",
+    "undercover": "Caramel",
+    "civilHint": "Douceur brune à base de cacao",
+    "undercoverHint": "Confiserie dorée obtenue par cuisson du sucre"
+  },
+  {
+    "civil": "Paris",
+    "undercover": "Londres",
+    "civilHint": "Capitale française avec la Tour Eiffel",
+    "undercoverHint": "Capitale britannique avec Big Ben"
+  },
+  {
+    "civil": "Pomme",
+    "undercover": "Poire",
+    "civilHint": "Fruit rond, rouge ou vert, croquant",
+    "undercoverHint": "Fruit en forme allongée, juteux et sucré"
+  },
+  {
+    "civil": "Pluie",
+    "undercover": "Neige",
+    "civilHint": "Précipitation liquide tombant des nuages",
+    "undercoverHint": "Précipitation solide formant un manteau blanc"
+  },
+  {
+    "civil": "Stylo",
+    "undercover": "Crayon",
+    "civilHint": "Instrument d'écriture à encre",
+    "undercoverHint": "Instrument d'écriture en graphite que l'on taille"
+  },
+  {
+    "civil": "Miroir",
+    "undercover": "Vitre",
+    "civilHint": "Surface réfléchissante montrant son propre reflet",
+    "undercoverHint": "Surface transparente laissant passer la lumière"
+  },
+  {
+    "civil": "Burger",
+    "undercover": "Kebab",
+    "civilHint": "Sandwich américain avec steak haché et pain rond",
+    "undercoverHint": "Sandwich d'origine turque avec viande grillée en broche"
+  },
+  {
+    "civil": "Piscine",
+    "undercover": "Lac",
+    "civilHint": "Bassin artificiel rempli d'eau pour nager",
+    "undercoverHint": "Étendue d'eau douce naturelle entourée de terres"
+  },
+  {
+    "civil": "Chaussure",
+    "undercover": "Sandale",
+    "civilHint": "Couvre-pied fermé pour protéger et marcher",
+    "undercoverHint": "Chaussure ouverte maintenue par des lanières"
+  },
+  {
+    "civil": "Télévision",
+    "undercover": "Radio",
+    "civilHint": "Appareil diffusant des images et du son",
+    "undercoverHint": "Appareil diffusant uniquement du son"
+  },
+  {
+    "civil": "Baguette",
+    "undercover": "Pain de mie",
+    "civilHint": "Pain français long et croustillant",
+    "undercoverHint": "Pain moelleux en tranches pour les toasts"
+  },
+  {
+    "civil": "Éléphant",
+    "undercover": "Rhinocéros",
+    "civilHint": "Le plus grand mammifère terrestre avec une trompe",
+    "undercoverHint": "Grand mammifère avec une corne sur le nez"
+  },
+  {
+    "civil": "Violon",
+    "undercover": "Violoncelle",
+    "civilHint": "Instrument à cordes frottées tenu sous le menton",
+    "undercoverHint": "Instrument à cordes frottées tenu entre les jambes"
+  },
+  {
+    "civil": "Lunettes",
+    "undercover": "Lentilles",
+    "civilHint": "Accessoire avec monture posé sur le nez pour mieux voir",
+    "undercoverHint": "Petits disques transparents posés sur les yeux"
+  },
+  {
+    "civil": "Canapé",
+    "undercover": "Fauteuil",
+    "civilHint": "Siège long pour plusieurs personnes dans le salon",
+    "undercoverHint": "Siège individuel confortable avec accoudoirs"
+  },
+  {
+    "civil": "Château",
+    "undercover": "Manoir",
+    "civilHint": "Grande demeure fortifiée de la noblesse médiévale",
+    "undercoverHint": "Grande maison de campagne élégante et bourgeoise"
+  },
+  {
+    "civil": "Abeille",
+    "undercover": "Guêpe",
+    "civilHint": "Insecte pollinisateur qui fabrique du miel",
+    "undercoverHint": "Insecte rayé au dard redoutable, sans miel"
+  },
+  {
+    "civil": "Métro",
+    "undercover": "Tramway",
+    "civilHint": "Transport en commun souterrain en ville",
+    "undercoverHint": "Transport en commun sur rails en surface"
+  },
+  {
+    "civil": "Glace",
+    "undercover": "Sorbet",
+    "civilHint": "Dessert glacé crémeux à base de lait",
+    "undercoverHint": "Dessert glacé à base de fruits, sans lait"
+  },
+  {
+    "civil": "Volcan",
+    "undercover": "Geyser",
+    "civilHint": "Montagne crachant de la lave en éruption",
+    "undercoverHint": "Source jaillissante d'eau chaude sous pression"
+  },
+  {
+    "civil": "Spaghetti",
+    "undercover": "Nouilles",
+    "civilHint": "Pâtes longues et fines d'origine italienne",
+    "undercoverHint": "Pâtes d'origine asiatique servies en soupe ou sautées"
+  },
+  {
+    "civil": "Sac à dos",
+    "undercover": "Valise",
+    "civilHint": "Bagage porté sur les épaules pour les randonnées",
+    "undercoverHint": "Bagage rigide à roulettes pour les voyages"
+  },
+  {
+    "civil": "Bougie",
+    "undercover": "Lampe",
+    "civilHint": "Bâton de cire avec mèche produisant une flamme",
+    "undercoverHint": "Objet électrique produisant de la lumière"
+  },
+  {
+    "civil": "Orchestre",
+    "undercover": "Fanfare",
+    "civilHint": "Ensemble de musiciens classiques avec cordes et vents",
+    "undercoverHint": "Ensemble de musiciens jouant des cuivres en défilé"
+  },
+  {
+    "civil": "Sushi",
+    "undercover": "Maki",
+    "civilHint": "Bouchée de riz vinaigré garnie de poisson cru",
+    "undercoverHint": "Rouleau de riz et poisson enveloppé dans une algue"
+  },
+  {
+    "civil": "Skateboard",
+    "undercover": "Roller",
+    "civilHint": "Planche à roulettes pour glisser debout",
+    "undercoverHint": "Chaussures à roulettes pour patiner"
+  },
+  {
+    "civil": "Pendule",
+    "undercover": "Sablier",
+    "civilHint": "Horloge murale avec aiguilles et cadran",
+    "undercoverHint": "Instrument de mesure du temps avec du sable qui s'écoule"
+  },
+  {
+    "civil": "Dentiste",
+    "undercover": "Médecin",
+    "civilHint": "Spécialiste qui soigne les dents",
+    "undercoverHint": "Professionnel de santé qui soigne le corps en général"
+  },
+  {
+    "civil": "Rose",
+    "undercover": "Tulipe",
+    "civilHint": "Fleur épineuse symbole de l'amour",
+    "undercoverHint": "Fleur en forme de cloche originaire de Hollande"
+  },
+  {
+    "civil": "Pyramide",
+    "undercover": "Obélisque",
+    "civilHint": "Monument triangulaire construit par les pharaons",
+    "undercoverHint": "Colonne de pierre pointue dressée vers le ciel"
+  },
+  {
+    "civil": "Parapluie",
+    "undercover": "Parasol",
+    "civilHint": "Accessoire pour se protéger de la pluie",
+    "undercoverHint": "Accessoire pour se protéger du soleil"
+  },
+  {
+    "civil": "Cravate",
+    "undercover": "Nœud papillon",
+    "civilHint": "Bande de tissu longue nouée autour du cou",
+    "undercoverHint": "Accessoire en forme d'ailes porté au col de la chemise"
+  },
+  {
+    "civil": "Savon",
+    "undercover": "Gel douche",
+    "civilHint": "Pain solide moussant pour se laver",
+    "undercoverHint": "Produit liquide moussant pour se laver sous la douche"
+  },
+  {
+    "civil": "Journal",
+    "undercover": "Blog",
+    "civilHint": "Publication imprimée quotidienne d'actualités",
+    "undercoverHint": "Site web personnel où l'on publie des articles"
+  },
+  {
+    "civil": "Forêt",
+    "undercover": "Jungle",
+    "civilHint": "Vaste étendue boisée des régions tempérées",
+    "undercoverHint": "Végétation dense et tropicale peuplée d'animaux exotiques"
+  },
+  {
+    "civil": "Igloo",
+    "undercover": "Tente",
+    "civilHint": "Habitation en blocs de glace des Inuits",
+    "undercoverHint": "Abri portatif en toile pour le camping"
+  },
+  {
+    "civil": "Fromage",
+    "undercover": "Beurre",
+    "civilHint": "Produit laitier affiné aux mille saveurs",
+    "undercoverHint": "Matière grasse laitière tartinée sur du pain"
+  },
+  {
+    "civil": "Grenouille",
+    "undercover": "Crapaud",
+    "civilHint": "Amphibien lisse qui saute et vit près de l'eau",
+    "undercoverHint": "Amphibien trapu à la peau verruqueuse"
+  },
+  {
+    "civil": "Photographe",
+    "undercover": "Peintre",
+    "civilHint": "Artiste capturant des images avec un appareil photo",
+    "undercoverHint": "Artiste créant des images avec un pinceau et des couleurs"
+  },
+  {
+    "civil": "Autoroute",
+    "undercover": "Nationale",
+    "civilHint": "Voie rapide à péage avec plusieurs files",
+    "undercoverHint": "Route principale traversant villes et campagnes"
+  },
+  {
+    "civil": "Requin",
+    "undercover": "Dauphin",
+    "civilHint": "Grand prédateur marin aux dents acérées",
+    "undercoverHint": "Mammifère marin intelligent et joueur"
+  },
+  {
+    "civil": "Manga",
+    "undercover": "Bande dessinée",
+    "civilHint": "BD japonaise lue de droite à gauche",
+    "undercoverHint": "Récit illustré en cases, souvent franco-belge"
+  },
+  {
+    "civil": "Piano",
+    "undercover": "Orgue",
+    "civilHint": "Instrument à touches avec marteaux frappant des cordes",
+    "undercoverHint": "Instrument à touches produisant du son par des tuyaux"
+  },
+  {
+    "civil": "Coussin",
+    "undercover": "Oreiller",
+    "civilHint": "Accessoire moelleux décoratif pour le canapé",
+    "undercoverHint": "Accessoire moelleux sur lequel on pose la tête pour dormir"
+  },
+  {
+    "civil": "Cerf",
+    "undercover": "Chevreuil",
+    "civilHint": "Grand cervidé majestueux avec de grands bois",
+    "undercoverHint": "Petit cervidé gracieux des forêts européennes"
+  },
+  {
+    "civil": "Whisky",
+    "undercover": "Rhum",
+    "civilHint": "Alcool de grain vieilli en fût, d'origine écossaise",
+    "undercoverHint": "Alcool de canne à sucre des Caraïbes"
+  },
+  {
+    "civil": "Tour Eiffel",
+    "undercover": "Statue de la Liberté",
+    "civilHint": "Monument en fer de 300 m au cœur de Paris",
+    "undercoverHint": "Monument offert par la France, dressé à New York"
+  },
+  {
+    "civil": "Ciseaux",
+    "undercover": "Couteau",
+    "civilHint": "Outil à deux lames croisées pour découper",
+    "undercoverHint": "Outil à une lame tranchante pour couper"
+  },
+  {
+    "civil": "Mouton",
+    "undercover": "Chèvre",
+    "civilHint": "Animal laineux élevé pour sa toison",
+    "undercoverHint": "Animal à cornes connu pour son lait et son fromage"
+  },
+  {
+    "civil": "Arc-en-ciel",
+    "undercover": "Aurore boréale",
+    "civilHint": "Phénomène lumineux multicolore après la pluie",
+    "undercoverHint": "Phénomène lumineux coloré dans le ciel polaire"
+  },
+  {
+    "civil": "Bretzel",
+    "undercover": "Grissini",
+    "civilHint": "Pain torsadé salé d'origine allemande",
+    "undercoverHint": "Fin bâtonnet de pain croustillant d'origine italienne"
+  },
+  {
+    "civil": "Yacht",
+    "undercover": "Voilier",
+    "civilHint": "Bateau de luxe à moteur pour les croisières",
+    "undercoverHint": "Bateau propulsé par le vent grâce à ses voiles"
+  },
+  {
+    "civil": "Samourai",
+    "undercover": "Chevalier",
+    "civilHint": "Guerrier japonais au katana et à l'armure laquée",
+    "undercoverHint": "Guerrier médiéval européen en armure avec une épée"
+  },
+  {
+    "civil": "Crocodile",
+    "undercover": "Alligator",
+    "civilHint": "Grand reptile au museau pointu vivant en eau salée",
+    "undercoverHint": "Grand reptile au museau arrondi vivant en eau douce"
+  },
+  {
+    "civil": "Bibliothèque",
+    "undercover": "Librairie",
+    "civilHint": "Lieu public où l'on emprunte des livres gratuitement",
+    "undercoverHint": "Commerce où l'on achète des livres"
+  },
+  {
+    "civil": "Soupe",
+    "undercover": "Bouillon",
+    "civilHint": "Plat chaud à base de légumes mixés",
+    "undercoverHint": "Liquide chaud obtenu par cuisson de viande ou légumes"
+  },
+  {
+    "civil": "Trompette",
+    "undercover": "Saxophone",
+    "civilHint": "Instrument à vent en cuivre avec pistons",
+    "undercoverHint": "Instrument à vent en cuivre avec anche et clés"
+  },
+  {
+    "civil": "Galaxie",
+    "undercover": "Nébuleuse",
+    "civilHint": "Vaste ensemble d'étoiles comme la Voie lactée",
+    "undercoverHint": "Nuage de gaz et poussières dans l'espace"
+  },
+  {
+    "civil": "Tortue",
+    "undercover": "Escargot",
+    "civilHint": "Reptile lent protégé par une carapace dure",
+    "undercoverHint": "Petit mollusque lent portant une coquille en spirale"
+  },
+  {
+    "civil": "Pancake",
+    "undercover": "Crêpe",
+    "civilHint": "Galette épaisse et moelleuse d'origine américaine",
+    "undercoverHint": "Galette fine et plate d'origine bretonne"
+  },
+  {
+    "civil": "Escalade",
+    "undercover": "Randonnée",
+    "civilHint": "Sport consistant à grimper des parois rocheuses",
+    "undercoverHint": "Activité de marche en pleine nature sur des sentiers"
+  },
+  {
+    "civil": "Saxophone",
+    "undercover": "Clarinette",
+    "civilHint": "Instrument à anche en cuivre, roi du jazz",
+    "undercoverHint": "Instrument à anche en bois au son doux et chaleureux"
+  },
+  {
+    "civil": "Robot",
+    "undercover": "Automate",
+    "civilHint": "Machine programmable capable de réaliser des tâches",
+    "undercoverHint": "Mécanisme imitant les mouvements d'un être vivant"
+  },
+  {
+    "civil": "Gondole",
+    "undercover": "Canoë",
+    "civilHint": "Embarcation vénitienne conduite à la rame",
+    "undercoverHint": "Petite embarcation légère propulsée à la pagaie"
+  },
+  {
+    "civil": "Cheminée",
+    "undercover": "Poêle",
+    "civilHint": "Foyer encastré dans le mur pour brûler du bois",
+    "undercoverHint": "Appareil de chauffage fermé à bois ou granulés"
+  },
+  {
+    "civil": "Perroquet",
+    "undercover": "Perruche",
+    "civilHint": "Grand oiseau coloré capable de parler",
+    "undercoverHint": "Petit oiseau coloré vif et bavard en cage"
+  },
+  {
+    "civil": "Marionnette",
+    "undercover": "Pantin",
+    "civilHint": "Figurine animée par des fils depuis une scène",
+    "undercoverHint": "Figurine articulée avec des membres mobiles"
+  },
+  {
+    "civil": "Salade",
+    "undercover": "Crudités",
+    "civilHint": "Plat froid composé de feuilles vertes assaisonnées",
+    "undercoverHint": "Assortiment de légumes crus servis en entrée"
+  },
+  {
+    "civil": "Phare",
+    "undercover": "Balise",
+    "civilHint": "Haute tour lumineuse guidant les navires",
+    "undercoverHint": "Signal lumineux ou sonore pour orienter la navigation"
+  },
+  {
+    "civil": "Pyjama",
+    "undercover": "Robe de chambre",
+    "civilHint": "Ensemble de vêtements pour dormir",
+    "undercoverHint": "Vêtement d'intérieur ample que l'on enfile au réveil"
+  },
+  {
+    "civil": "Aigle",
+    "undercover": "Faucon",
+    "civilHint": "Grand rapace majestueux au vol plané impressionnant",
+    "undercoverHint": "Rapace rapide et agile spécialisé dans la chasse en piqué"
+  },
+  {
+    "civil": "Cathédrale",
+    "undercover": "Mosquée",
+    "civilHint": "Grand édifice religieux chrétien avec vitraux et clocher",
+    "undercoverHint": "Lieu de culte musulman avec minaret et coupole"
+  },
+  {
+    "civil": "Hamac",
+    "undercover": "Transat",
+    "civilHint": "Toile suspendue entre deux arbres pour se balancer",
+    "undercoverHint": "Chaise longue pliante pour se prélasser au soleil"
+  },
+  {
+    "civil": "Confiture",
+    "undercover": "Miel",
+    "civilHint": "Préparation sucrée à base de fruits cuits",
+    "undercoverHint": "Substance sucrée dorée produite par les abeilles"
+  },
+  {
+    "civil": "Astronaute",
+    "undercover": "Pilote",
+    "civilHint": "Personne qui voyage dans l'espace",
+    "undercoverHint": "Personne aux commandes d'un avion"
+  },
+  {
+    "civil": "Kangourou",
+    "undercover": "Wallaby",
+    "civilHint": "Grand marsupial australien bondissant avec sa poche",
+    "undercoverHint": "Petit marsupial australien ressemblant à son grand cousin"
+  },
+  {
+    "civil": "Carnaval",
+    "undercover": "Halloween",
+    "civilHint": "Fête de déguisements colorés avec défilés et confettis",
+    "undercoverHint": "Fête costumée effrayante avec citrouilles et fantômes"
+  },
+  {
+    "civil": "Fontaine",
+    "undercover": "Cascade",
+    "civilHint": "Construction d'où jaillit de l'eau dans une ville",
+    "undercoverHint": "Chute d'eau naturelle tombant d'une falaise"
+  },
+  {
+    "civil": "Sardine",
+    "undercover": "Anchois",
+    "civilHint": "Petit poisson argenté souvent en conserve à l'huile",
+    "undercoverHint": "Très petit poisson salé utilisé sur les pizzas"
+  },
+  {
+    "civil": "Château de sable",
+    "undercover": "Bonhomme de neige",
+    "civilHint": "Construction éphémère sur la plage en été",
+    "undercoverHint": "Construction éphémère dans le jardin en hiver"
+  },
+  {
+    "civil": "Opéra",
+    "undercover": "Comédie musicale",
+    "civilHint": "Spectacle lyrique chanté en musique classique",
+    "undercoverHint": "Spectacle mêlant chant, danse et dialogues modernes"
+  },
+  {
+    "civil": "Puzzle",
+    "undercover": "Lego",
+    "civilHint": "Jeu d'assemblage d'une image à partir de pièces découpées",
+    "undercoverHint": "Jeu de construction avec des briques à emboîter"
+  },
+  {
+    "civil": "Clown",
+    "undercover": "Mime",
+    "civilHint": "Artiste comique maquillé avec un nez rouge",
+    "undercoverHint": "Artiste muet au visage blanc exprimant tout par le geste"
+  },
+  {
+    "civil": "Bermuda",
+    "undercover": "Short",
+    "civilHint": "Pantalon court arrivant aux genoux, style décontracté",
+    "undercoverHint": "Pantalon très court pour le sport ou l'été"
+  },
+  {
+    "civil": "Boussole",
+    "undercover": "GPS",
+    "civilHint": "Instrument à aiguille magnétique indiquant le nord",
+    "undercoverHint": "Appareil électronique de navigation par satellite"
+  },
+  {
+    "civil": "Chameau",
+    "undercover": "Dromadaire",
+    "civilHint": "Animal du désert avec deux bosses",
+    "undercoverHint": "Animal du désert avec une seule bosse"
+  },
+  {
+    "civil": "Pingouin",
+    "undercover": "Manchot",
+    "civilHint": "Oiseau marin des pôles qui vole",
+    "undercoverHint": "Oiseau marin des pôles qui ne vole pas"
+  },
+  {
+    "civil": "Panthère",
+    "undercover": "Léopard",
+    "civilHint": "Grand félin noir à la robe sombre",
+    "undercoverHint": "Grand félin tacheté aux rosettes distinctives"
+  },
+  {
+    "civil": "Loutre",
+    "undercover": "Castor",
+    "civilHint": "Mammifère aquatique joueur au pelage lisse",
+    "undercoverHint": "Mammifère aquatique constructeur de barrages"
+  },
+  {
+    "civil": "Flamant rose",
+    "undercover": "Héron",
+    "civilHint": "Grand oiseau rose qui se tient sur une patte",
+    "undercoverHint": "Grand oiseau gris pêchant dans les marais"
+  },
+  {
+    "civil": "Mouche",
+    "undercover": "Moustique",
+    "civilHint": "Insecte volant bourdonnant attirée par les aliments",
+    "undercoverHint": "Insecte piqueur actif au coucher du soleil"
+  },
+  {
+    "civil": "Araignée",
+    "undercover": "Scorpion",
+    "civilHint": "Arachnide tisseuse de toiles pour capturer ses proies",
+    "undercoverHint": "Arachnide à pince et dard venimeux"
+  },
+  {
+    "civil": "Baleine",
+    "undercover": "Cachalot",
+    "civilHint": "Le plus grand mammifère marin filtrant le krill",
+    "undercoverHint": "Grand mammifère marin chasseur de calmars géants"
+  },
+  {
+    "civil": "Colombe",
+    "undercover": "Pigeon",
+    "civilHint": "Oiseau blanc symbole de paix",
+    "undercoverHint": "Oiseau gris commun des villes"
+  },
+  {
+    "civil": "Renard",
+    "undercover": "Blaireau",
+    "civilHint": "Canidé roux connu pour sa ruse",
+    "undercoverHint": "Mustélidé rayé vivant dans des terriers"
+  },
+  {
+    "civil": "Poulpe",
+    "undercover": "Calmar",
+    "civilHint": "Mollusque marin à huit tentacules",
+    "undercoverHint": "Mollusque marin à dix tentacules et corps allongé"
+  },
+  {
+    "civil": "Hibou",
+    "undercover": "Chouette",
+    "civilHint": "Rapace nocturne avec des aigrettes sur la tête",
+    "undercoverHint": "Rapace nocturne sans aigrettes, plus discret"
+  },
+  {
+    "civil": "Fourmi",
+    "undercover": "Termite",
+    "civilHint": "Insecte social vivant en colonie et portant des charges",
+    "undercoverHint": "Insecte social dévoreur de bois et constructeur de termitières"
+  },
+  {
+    "civil": "Saumon",
+    "undercover": "Truite",
+    "civilHint": "Poisson migrateur qui remonte les rivières pour pondre",
+    "undercoverHint": "Poisson tachetédes rivières froides de montagne"
+  },
+  {
+    "civil": "Cobra",
+    "undercover": "Python",
+    "civilHint": "Serpent venimeux qui dresse son capuchon",
+    "undercoverHint": "Grand serpent non venimeux qui étouffe ses proies"
+  },
+  {
+    "civil": "Lapin",
+    "undercover": "Lièvre",
+    "civilHint": "Petit mammifère domestique aux longues oreilles",
+    "undercoverHint": "Mammifère sauvage plus grand, coureur très rapide"
+  },
+  {
+    "civil": "Cochon d'Inde",
+    "undercover": "Hamster",
+    "civilHint": "Petit rongeur potelé sans queue gardé comme mascotte",
+    "undercoverHint": "Petit rongeur aux bajoues qui court dans une roue"
+  },
+  {
+    "civil": "Gorille",
+    "undercover": "Chimpanzé",
+    "civilHint": "Grand singe imposant aux bras puissants",
+    "undercoverHint": "Grand singe agile au sourire communicatif"
+  },
+  {
+    "civil": "Autruche",
+    "undercover": "Émeu",
+    "civilHint": "Grand oiseau coureur du désert africain",
+    "undercoverHint": "Grand oiseau coureur d'Australie"
+  },
+  {
+    "civil": "Bison",
+    "undercover": "Buffle",
+    "civilHint": "Grand bovidé sauvage des plaines d'Amérique du Nord",
+    "undercoverHint": "Grand bovidé sauvage d'Afrique et d'Asie"
+  },
+  {
+    "civil": "Mouette",
+    "undercover": "Goéland",
+    "civilHint": "Petit oiseau de mer blanc aux cris perçants",
+    "undercoverHint": "Grand oiseau de mer blanc plus imposant"
+  },
+  {
+    "civil": "Bière",
+    "undercover": "Cidre",
+    "civilHint": "Boisson alcoolisée fermentée à base d'orge et de houblon",
+    "undercoverHint": "Boisson alcoolisée pétillante à base de pommes"
+  },
+  {
+    "civil": "Champagne",
+    "undercover": "Prosecco",
+    "civilHint": "Vin pétillant français de la région champenoise",
+    "undercoverHint": "Vin pétillant italien de la région de Vénétie"
+  },
+  {
+    "civil": "Muffin",
+    "undercover": "Cupcake",
+    "civilHint": "Petit gâteau individuel moelleux sans glaçage",
+    "undercoverHint": "Petit gâteau individuel surmonté de crème colorée"
+  },
+  {
+    "civil": "Fondue",
+    "undercover": "Raclette",
+    "civilHint": "Plat alpin où l'on trempe le pain dans le fromage fondu",
+    "undercoverHint": "Plat alpin où l'on fait fondre du fromage à la spatule"
+  },
+  {
+    "civil": "Framboise",
+    "undercover": "Groseille",
+    "civilHint": "Petit fruit rouge en drupe poussant en touffes",
+    "undercoverHint": "Petit fruit rouge acidulé en grappes"
+  },
+  {
+    "civil": "Citron",
+    "undercover": "Citron vert",
+    "civilHint": "Agrume jaune au goût acide utilisé en pâtisserie",
+    "undercoverHint": "Agrume vert au parfum frais, roi des cocktails"
+  },
+  {
+    "civil": "Croque-monsieur",
+    "undercover": "Club sandwich",
+    "civilHint": "Sandwich chaud gratiné au fromage d'origine française",
+    "undercoverHint": "Triple-decker froid avec bacon, tomate et mayo"
+  },
+  {
+    "civil": "Macaron",
+    "undercover": "Financier",
+    "civilHint": "Petit gâteau coloré à la ganache entre deux coques",
+    "undercoverHint": "Petit gâteau rectangulaire moelleux à la poudre d'amandes"
+  },
+  {
+    "civil": "Yaourt",
+    "undercover": "Fromage blanc",
+    "civilHint": "Lait fermenté en pot individuel",
+    "undercoverHint": "Produit laitier frais onctueux plus épais"
+  },
+  {
+    "civil": "Chou-fleur",
+    "undercover": "Brocoli",
+    "civilHint": "Légume blanc à tête dense et feuilles vertes",
+    "undercoverHint": "Légume vert à petits bouquets et tige épaisse"
+  },
+  {
+    "civil": "Pistache",
+    "undercover": "Noix de cajou",
+    "civilHint": "Petite noix verte croquante aux teintes violacées",
+    "undercoverHint": "Noix en forme de haricot originaire du Brésil"
+  },
+  {
+    "civil": "Tarte tatin",
+    "undercover": "Tarte aux pommes",
+    "civilHint": "Tarte aux pommes caramélisées servie à l'envers",
+    "undercoverHint": "Tarte classique aux pommes sur fond de pâte"
+  },
+  {
+    "civil": "Brioche",
+    "undercover": "Kouglof",
+    "civilHint": "Pain brioché moelleux riche en beurre et œufs",
+    "undercoverHint": "Gâteau alsacien en couronne avec raisins secs"
+  },
+  {
+    "civil": "Pesto",
+    "undercover": "Tapenade",
+    "civilHint": "Sauce vibrante à base de basilic, parmesan et pignons",
+    "undercoverHint": "Sauce provençale à base d'olives et câpres"
+  },
+  {
+    "civil": "Natation",
+    "undercover": "Plongée",
+    "civilHint": "Sport aquatique en surface avec des nages codifiées",
+    "undercoverHint": "Activité subaquatique avec bouteilles d'air"
+  },
+  {
+    "civil": "Tennis",
+    "undercover": "Badminton",
+    "civilHint": "Sport de raquette avec une balle sur un court",
+    "undercoverHint": "Sport de raquette avec un volant léger"
+  },
+  {
+    "civil": "Boxe",
+    "undercover": "Karaté",
+    "civilHint": "Art martial de coups de poings sur un ring",
+    "undercoverHint": "Art martial japonais de coups de poings et pieds"
+  },
+  {
+    "civil": "Yoga",
+    "undercover": "Pilates",
+    "civilHint": "Pratique de poses et de respiration d'origine indienne",
+    "undercoverHint": "Méthode de renforcement musculaire profond"
+  },
+  {
+    "civil": "Ski",
+    "undercover": "Snowboard",
+    "civilHint": "Sport d'hiver sur deux planches parallèles",
+    "undercoverHint": "Sport d'hiver sur une seule planche large"
+  },
+  {
+    "civil": "Surf",
+    "undercover": "Wakeboard",
+    "civilHint": "Sport de glisse sur les vagues de l'océan",
+    "undercoverHint": "Sport de glisse sur l'eau tiré par un bateau"
+  },
+  {
+    "civil": "Handball",
+    "undercover": "Waterpolo",
+    "civilHint": "Sport collectif où l'on lance un ballon dans un but",
+    "undercoverHint": "Sport collectif joué dans l'eau avec un ballon"
+  },
+  {
+    "civil": "Danse classique",
+    "undercover": "Danse contemporaine",
+    "civilHint": "Art chorégraphique sur pointes avec tutu et code strict",
+    "undercoverHint": "Art chorégraphique libre pieds nus sur scène"
+  },
+  {
+    "civil": "Judo",
+    "undercover": "Lutte",
+    "civilHint": "Art martial japonais basé sur les projections au sol",
+    "undercoverHint": "Sport de combat où l'on cherche à terrasser l'adversaire"
+  },
+  {
+    "civil": "Tir à l'arc",
+    "undercover": "Fléchettes",
+    "civilHint": "Sport de précision avec arc et flèches vers une cible",
+    "undercoverHint": "Jeu de précision avec petits projectiles vers une cible ronde"
+  },
+  {
+    "civil": "Volleyball",
+    "undercover": "Beach-volley",
+    "civilHint": "Sport collectif sur parquet avec filet et six joueurs",
+    "undercoverHint": "Sport collectif sur sable avec deux joueurs par équipe"
+  },
+  {
+    "civil": "Bowling",
+    "undercover": "Pétanque",
+    "civilHint": "Jeu où l'on roule une boule pour renverser des quilles",
+    "undercoverHint": "Jeu où l'on lance des boules près d'un cochonnet"
+  },
+  {
+    "civil": "Cyclisme",
+    "undercover": "Triathlon",
+    "civilHint": "Sport de compétition sur vélo sur route ou piste",
+    "undercoverHint": "Sport enchaînant natation, vélo et course à pied"
+  },
+  {
+    "civil": "Équitation",
+    "undercover": "Polo",
+    "civilHint": "Art de monter à cheval avec grâce et technique",
+    "undercoverHint": "Sport à cheval où l'on frappe une balle avec un maillet"
+  },
+  {
+    "civil": "Golf",
+    "undercover": "Croquet",
+    "civilHint": "Sport où l'on frappe une balle dans un trou avec un club",
+    "undercoverHint": "Jeu où l'on frappe des boules dans des arceaux"
+  },
+  {
+    "civil": "Planche à voile",
+    "undercover": "Kitesurf",
+    "civilHint": "Glisse sur l'eau grâce à une voile fixée à une planche",
+    "undercoverHint": "Glisse sur l'eau propulsée par un cerf-volant géant"
+  },
+  {
+    "civil": "Billard",
+    "undercover": "Snooker",
+    "civilHint": "Jeu de table avec trois boules et une queue en bois",
+    "undercoverHint": "Jeu de table britannique avec 22 boules colorées"
+  },
+  {
+    "civil": "Rome",
+    "undercover": "Naples",
+    "civilHint": "Capitale italienne avec le Colisée et le Vatican",
+    "undercoverHint": "Ville du sud de l'Italie berceau de la pizza"
+  },
+  {
+    "civil": "Tokyo",
+    "undercover": "Osaka",
+    "civilHint": "Capitale japonaise ultramoderne et tentaculaire",
+    "undercoverHint": "Deuxième ville du Japon, capitale de la gastronomie"
+  },
+  {
+    "civil": "Sahara",
+    "undercover": "Gobi",
+    "civilHint": "Plus grand désert chaud du monde en Afrique",
+    "undercoverHint": "Grand désert froid d'Asie centrale"
+  },
+  {
+    "civil": "Seine",
+    "undercover": "Loire",
+    "civilHint": "Fleuve traversant Paris et se jetant dans la Manche",
+    "undercoverHint": "Plus long fleuve de France traversant les châteaux"
+  },
+  {
+    "civil": "Aéroport",
+    "undercover": "Gare",
+    "civilHint": "Infrastructure accueillant les avions et les passagers",
+    "undercoverHint": "Infrastructure accueillant les trains et les voyageurs"
+  },
+  {
+    "civil": "Île",
+    "undercover": "Presqu'île",
+    "civilHint": "Terre entièrement entourée d'eau",
+    "undercoverHint": "Terre presque entièrement entourée d'eau"
+  },
+  {
+    "civil": "Falaise",
+    "undercover": "Dune",
+    "civilHint": "Paroi rocheuse abrupte surplombant la mer",
+    "undercoverHint": "Colline de sable sculptée par le vent"
+  },
+  {
+    "civil": "Fjord",
+    "undercover": "Ria",
+    "civilHint": "Bras de mer profond creusé par un glacier en Scandinavie",
+    "undercoverHint": "Vallée fluviale envahie par la mer en Bretagne"
+  },
+  {
+    "civil": "Palais",
+    "undercover": "Abbaye",
+    "civilHint": "Résidence royale ou princière aux vastes salles",
+    "undercoverHint": "Ensemble monastique dirigé par un abbé ou une abbesse"
+  },
+  {
+    "civil": "Stade",
+    "undercover": "Arène",
+    "civilHint": "Enceinte sportive moderne pour les grandes compétitions",
+    "undercoverHint": "Enceinte circulaire antique pour les combats et spectacles"
+  },
+  {
+    "civil": "Marché",
+    "undercover": "Bazar",
+    "civilHint": "Lieu de vente en plein air avec étals de produits frais",
+    "undercoverHint": "Marché couvert oriental avec boutiques labyrinthiques"
+  },
+  {
+    "civil": "Plateau",
+    "undercover": "Plaine",
+    "civilHint": "Étendue plate en altitude avec des bords abrupts",
+    "undercoverHint": "Vaste étendue plate à basse altitude"
+  },
+  {
+    "civil": "Smartphone",
+    "undercover": "Tablette",
+    "civilHint": "Petit écran tactile que l'on glisse dans sa poche",
+    "undercoverHint": "Grand écran tactile à poser pour lire ou dessiner"
+  },
+  {
+    "civil": "Casque audio",
+    "undercover": "Écouteurs",
+    "civilHint": "Appareil portés sur les deux oreilles pour écouter",
+    "undercoverHint": "Petits embouts qui s'insèrent dans les oreilles"
+  },
+  {
+    "civil": "Drone",
+    "undercover": "Cerf-volant",
+    "civilHint": "Appareil volant téléguidé avec caméra embarquée",
+    "undercoverHint": "Engin volant en tissu tiré par un fil dans le vent"
+  },
+  {
+    "civil": "Microscope",
+    "undercover": "Télescope",
+    "civilHint": "Instrument optique pour observer l'infiniment petit",
+    "undercoverHint": "Instrument optique pour observer l'infiniment loin"
+  },
+  {
+    "civil": "Clé USB",
+    "undercover": "Disque dur externe",
+    "civilHint": "Petit dispositif de stockage portable à brancher en USB",
+    "undercoverHint": "Boîtier de stockage portable avec grande capacité"
+  },
+  {
+    "civil": "Réfrigérateur",
+    "undercover": "Congélateur",
+    "civilHint": "Appareil ménager pour conserver les aliments au frais",
+    "undercoverHint": "Appareil ménager pour conserver les aliments gelés"
+  },
+  {
+    "civil": "Machine à laver",
+    "undercover": "Sèche-linge",
+    "civilHint": "Appareil ménager qui lave le linge avec de l'eau",
+    "undercoverHint": "Appareil ménager qui sèche le linge avec de l'air chaud"
+  },
+  {
+    "civil": "Grille-pain",
+    "undercover": "Four à micro-ondes",
+    "civilHint": "Appareil faisant griller les tranches de pain",
+    "undercoverHint": "Appareil réchauffant les aliments par ondes électromagnétiques"
+  },
+  {
+    "civil": "Serrure",
+    "undercover": "Cadenas",
+    "civilHint": "Mécanisme de fermeture fixe encastré dans une porte",
+    "undercoverHint": "Mécanisme de fermeture portable et amovible"
+  },
+  {
+    "civil": "Marteau",
+    "undercover": "Massue",
+    "civilHint": "Outil pour enfoncer des clous avec une tête en métal",
+    "undercoverHint": "Arme primitive massive en bois ou pierre"
+  },
+  {
+    "civil": "Enceinte",
+    "undercover": "Amplificateur",
+    "civilHint": "Boîtier produisant du son pour une pièce",
+    "undercoverHint": "Appareil qui amplifie le signal audio d'un instrument"
+  },
+  {
+    "civil": "Roman",
+    "undercover": "Nouvelle",
+    "civilHint": "Long récit narratif en prose avec de nombreux personnages",
+    "undercoverHint": "Court récit narratif centré sur un seul événement"
+  },
+  {
+    "civil": "Documentaire",
+    "undercover": "Reportage",
+    "civilHint": "Film non fictif qui explore un sujet en profondeur",
+    "undercoverHint": "Compte-rendu journalistique filmé sur le terrain"
+  },
+  {
+    "civil": "Podcast",
+    "undercover": "Émission de radio",
+    "civilHint": "Contenu audio à écouter en différé quand on veut",
+    "undercoverHint": "Contenu audio diffusé en direct à une heure précise"
+  },
+  {
+    "civil": "Jeu vidéo",
+    "undercover": "Jeu de plateau",
+    "civilHint": "Divertissement numérique interactif sur écran",
+    "undercoverHint": "Divertissement physique joué sur un plateau avec des pions"
+  },
+  {
+    "civil": "Festival",
+    "undercover": "Concert",
+    "civilHint": "Événement musical multi-artistes sur plusieurs jours",
+    "undercoverHint": "Spectacle musical d'un seul artiste ou groupe"
+  },
+  {
+    "civil": "Escape game",
+    "undercover": "Jeu de rôle",
+    "civilHint": "Jeu où l'on résout des énigmes pour s'échapper d'une pièce",
+    "undercoverHint": "Jeu où chaque joueur incarne un personnage dans un récit"
+  },
+  {
+    "civil": "Symphonie",
+    "undercover": "Concerto",
+    "civilHint": "Composition orchestrale classique en plusieurs mouvements",
+    "undercoverHint": "Composition mettant en valeur un soliste face à l'orchestre"
+  },
+  {
+    "civil": "Conte",
+    "undercover": "Fable",
+    "civilHint": "Récit merveilleux avec héros et créatures magiques",
+    "undercoverHint": "Courte histoire allégorique avec des animaux et une morale"
+  },
+  {
+    "civil": "Portrait",
+    "undercover": "Caricature",
+    "civilHint": "Représentation fidèle du visage d'une personne",
+    "undercoverHint": "Dessin exagérant les traits caractéristiques d'une personne"
+  },
+  {
+    "civil": "Encyclopédie",
+    "undercover": "Dictionnaire",
+    "civilHint": "Ouvrage de référence expliquant les sujets en détail",
+    "undercoverHint": "Ouvrage de référence définissant les mots par ordre alphabétique"
+  },
+  {
+    "civil": "Affiche",
+    "undercover": "Fresque",
+    "civilHint": "Image imprimée sur papier collée sur un mur",
+    "undercoverHint": "Peinture monumentale réalisée directement sur un mur"
+  },
+  {
+    "civil": "Croquis",
+    "undercover": "Esquisse",
+    "civilHint": "Dessin rapide et stylisé d'observation",
+    "undercoverHint": "Premier jet d'une œuvre encore imprécis et provisoire"
+  },
+  {
+    "civil": "Cirque",
+    "undercover": "Cabaret",
+    "civilHint": "Spectacle sous chapiteau avec acrobates et clowns",
+    "undercoverHint": "Spectacle de variétés dans une salle avec dîner"
+  },
+  {
+    "civil": "Ballet",
+    "undercover": "Opéra",
+    "civilHint": "Spectacle pur de danse classique sans paroles",
+    "undercoverHint": "Spectacle lyrique alliant chant et orchestre"
+  },
+  {
+    "civil": "Comète",
+    "undercover": "Astéroïde",
+    "civilHint": "Corps céleste avec une longue traîne lumineuse",
+    "undercoverHint": "Corps rocheux orbitant autour du Soleil sans traîne"
+  },
+  {
+    "civil": "Tornade",
+    "undercover": "Cyclone",
+    "civilHint": "Tourbillon atmosphérique violent en entonnoir",
+    "undercoverHint": "Tempête tropicale rotatoire formée sur l'océan"
+  },
+  {
+    "civil": "Cactus",
+    "undercover": "Agave",
+    "civilHint": "Plante charnue épineuse du désert stockant l'eau",
+    "undercoverHint": "Plante grasse aux feuilles pointues servant à faire la tequila"
+  },
+  {
+    "civil": "Prairie",
+    "undercover": "Savane",
+    "civilHint": "Vaste étendue herbeuse des régions tempérées",
+    "undercoverHint": "Vaste étendue herbeuse tropicale parsemée d'arbres"
+  },
+  {
+    "civil": "Glacier",
+    "undercover": "Iceberg",
+    "civilHint": "Masse de glace dans les montagnes qui se déplace lentement",
+    "undercoverHint": "Bloc de glace flottant dont la majeure partie est sous l'eau"
+  },
+  {
+    "civil": "Silex",
+    "undercover": "Obsidienne",
+    "civilHint": "Roche dure taillée par les hommes préhistoriques",
+    "undercoverHint": "Roche volcanique noire aux bords tranchants"
+  },
+  {
+    "civil": "Rosée",
+    "undercover": "Givre",
+    "civilHint": "Gouttelettes d'eau déposées sur les feuilles au matin",
+    "undercoverHint": "Dépôt de glace blanc formé par le gel sur les surfaces"
+  },
+  {
+    "civil": "Grêle",
+    "undercover": "Verglas",
+    "civilHint": "Précipitation de petites billes de glace dures",
+    "undercoverHint": "Fine couche de glace transparente et glissante sur le sol"
+  },
+  {
+    "civil": "Brume",
+    "undercover": "Brouillard",
+    "civilHint": "Légère condensation réduisant peu la visibilité",
+    "undercoverHint": "Épaisse condensation réduisant fortement la visibilité"
+  },
+  {
+    "civil": "Tourbière",
+    "undercover": "Marais",
+    "civilHint": "Zone humide acide où s'accumule la tourbe",
+    "undercoverHint": "Zone humide peu profonde avec végétation aquatique"
+  },
+  {
+    "civil": "Gland",
+    "undercover": "Châtaigne",
+    "civilHint": "Fruit ovale lisse du chêne ramassé en automne",
+    "undercoverHint": "Fruit épineux du châtaignier que l'on grille"
+  },
+  {
+    "civil": "Imperméable",
+    "undercover": "Ciré",
+    "civilHint": "Manteau long imperméable pour la pluie en ville",
+    "undercoverHint": "Veste imperméable enduite jaune du marin pêcheur"
+  },
+  {
+    "civil": "Smoking",
+    "undercover": "Costume",
+    "civilHint": "Tenue formelle noire avec nœud papillon pour le soir",
+    "undercoverHint": "Tenue formelle en veste et pantalon assortis"
+  },
+  {
+    "civil": "Cardigan",
+    "undercover": "Pull-over",
+    "civilHint": "Tricot qui s'ouvre sur le devant avec des boutons",
+    "undercoverHint": "Tricot sans ouverture que l'on enfile par la tête"
+  },
+  {
+    "civil": "Bonnet",
+    "undercover": "Chapeau",
+    "civilHint": "Couvre-chef souple en laine tricoté contre le froid",
+    "undercoverHint": "Couvre-chef rigide avec bord et visière"
+  },
+  {
+    "civil": "Gants",
+    "undercover": "Mitaines",
+    "civilHint": "Couvre-mains avec doigts séparés",
+    "undercoverHint": "Couvre-mains avec pouce séparé mais autres doigts ensemble"
+  },
+  {
+    "civil": "Écharpe",
+    "undercover": "Foulard",
+    "civilHint": "Long tissu tricoté chaud enroulé autour du cou",
+    "undercoverHint": "Carré de tissu léger noué autour du cou ou de la tête"
+  },
+  {
+    "civil": "Ceinture",
+    "undercover": "Bretelles",
+    "civilHint": "Bande de cuir ou tissu passant dans les passants du pantalon",
+    "undercoverHint": "Deux bandes élastiques passant sur les épaules pour tenir le pantalon"
+  },
+  {
+    "civil": "Botte",
+    "undercover": "Mocassin",
+    "civilHint": "Chaussure haute montant jusqu'au genou",
+    "undercoverHint": "Chaussure basse plate sans lacets ni talon"
+  },
+  {
+    "civil": "Bague",
+    "undercover": "Chevalière",
+    "civilHint": "Anneau porté à un doigt, souvent orné d'une pierre",
+    "undercoverHint": "Anneau large gravé d'un monogramme ou blason"
+  },
+  {
+    "civil": "Bracelet",
+    "undercover": "Manchette",
+    "civilHint": "Accessoire en anneau porté autour du poignet",
+    "undercoverHint": "Bracelet large et rigide couvrant une partie de l'avant-bras"
+  },
+  {
+    "civil": "Sac à main",
+    "undercover": "Pochette",
+    "civilHint": "Accessoire de mode avec poignée pour porter ses affaires",
+    "undercoverHint": "Petit sac plat sans poignée tenu à la main"
+  },
+  {
+    "civil": "Cartable",
+    "undercover": "Serviette",
+    "civilHint": "Sac rectangulaire à bretelles pour les écoliers",
+    "undercoverHint": "Sac plat rigide à poignée pour les professionnels"
+  },
+  {
+    "civil": "Manteau",
+    "undercover": "Pardessus",
+    "civilHint": "Vêtement long et chaud porté par-dessus les habits",
+    "undercoverHint": "Manteau élégant et ajusté porté par les hommes"
+  },
+  {
+    "civil": "Cuisinier",
+    "undercover": "Pâtissier",
+    "civilHint": "Professionnel qui prépare des plats salés en cuisine",
+    "undercoverHint": "Professionnel qui crée des gâteaux et desserts"
+  },
+  {
+    "civil": "Architecte",
+    "undercover": "Urbaniste",
+    "civilHint": "Professionnel qui conçoit des bâtiments",
+    "undercoverHint": "Professionnel qui planifie l'organisation des villes"
+  },
+  {
+    "civil": "Journaliste",
+    "undercover": "Correspondant",
+    "civilHint": "Professionnel qui rédige et diffuse l'actualité",
+    "undercoverHint": "Journaliste basé à l'étranger pour couvrir une région"
+  },
+  {
+    "civil": "Chirurgien",
+    "undercover": "Anesthésiste",
+    "civilHint": "Médecin qui opère les patients en salle d'opération",
+    "undercoverHint": "Médecin qui endort les patients avant une opération"
+  },
+  {
+    "civil": "Instituteur",
+    "undercover": "Professeur",
+    "civilHint": "Enseignant à l'école primaire",
+    "undercoverHint": "Enseignant au collège, lycée ou université"
+  },
+  {
+    "civil": "Pompier",
+    "undercover": "Sauveteur",
+    "civilHint": "Professionnel qui éteint les incendies",
+    "undercoverHint": "Professionnel qui secourt les personnes en danger"
+  },
+  {
+    "civil": "Gendarme",
+    "undercover": "Policier",
+    "civilHint": "Agent de sécurité militaire des zones rurales",
+    "undercoverHint": "Agent de sécurité civil des zones urbaines"
+  },
+  {
+    "civil": "Facteur",
+    "undercover": "Livreur",
+    "civilHint": "Agent distribuant le courrier postal à domicile",
+    "undercoverHint": "Agent livrant des colis et commandes à domicile"
+  },
+  {
+    "civil": "Pêcheur",
+    "undercover": "Chasseur",
+    "civilHint": "Personne capturant des poissons à la ligne ou au filet",
+    "undercoverHint": "Personne traquant le gibier dans la nature"
+  },
+  {
+    "civil": "Notaire",
+    "undercover": "Avocat",
+    "civilHint": "Officier public rédigeant les actes officiels",
+    "undercoverHint": "Juriste défendant les intérêts de ses clients"
+  },
+  {
+    "civil": "Sommelier",
+    "undercover": "Barista",
+    "civilHint": "Spécialiste des vins conseillant au restaurant",
+    "undercoverHint": "Spécialiste du café préparant des boissons artisanales"
+  },
+  {
+    "civil": "Botaniste",
+    "undercover": "Agronome",
+    "civilHint": "Scientifique étudiant les végétaux et leur classification",
+    "undercoverHint": "Scientifique appliquant la biologie à l'agriculture"
+  },
+  {
+    "civil": "Archéologue",
+    "undercover": "Paléontologue",
+    "civilHint": "Scientifique qui fouille les vestiges des civilisations passées",
+    "undercoverHint": "Scientifique qui étudie les fossiles d'animaux préhistoriques"
+  },
+  {
+    "civil": "Acteur",
+    "undercover": "Mannequin",
+    "civilHint": "Artiste interprétant des rôles sur scène ou à l'écran",
+    "undercoverHint": "Artiste présentant des vêtements sur podium ou shooting"
+  },
+  {
+    "civil": "Horoscope",
+    "undercover": "Tarot",
+    "civilHint": "Prédiction fondée sur les positions des astres",
+    "undercoverHint": "Prédiction fondée sur le tirage de cartes symboliques"
+  },
+  {
+    "civil": "Levier",
+    "undercover": "Poulie",
+    "civilHint": "Simple machine permettant de soulever avec moins d'effort",
+    "undercoverHint": "Mécanisme à roulette changeant la direction d'un effort"
+  },
+  {
+    "civil": "Coquillage",
+    "undercover": "Corail",
+    "civilHint": "Enveloppe calcaire d'un mollusque ramassée sur la plage",
+    "undercoverHint": "Organisme marin calcaire formant des récifs colorés"
+  },
+  {
+    "civil": "Parchemin",
+    "undercover": "Papyrus",
+    "civilHint": "Peau animale séchée utilisée comme support d'écriture au Moyen-Âge",
+    "undercoverHint": "Roseau séché utilisé comme support d'écriture en Égypte antique"
+  },
+  {
+    "civil": "Sirop",
+    "undercover": "Élixir",
+    "civilHint": "Liquide sucré épais pharmaceutique ou culinaire",
+    "undercoverHint": "Liquide magique ou médicinal aux vertus mystérieuses"
+  },
+  {
+    "civil": "Labyrinthe",
+    "undercover": "Dédale",
+    "civilHint": "Réseau de chemins entrelacés dont il est difficile de sortir",
+    "undercoverHint": "Configuration tortueuse et confuse de passages entremêlés"
+  },
+  {
+    "civil": "Bouclier",
+    "undercover": "Armure",
+    "civilHint": "Protection portable tenue à la main pour parer les coups",
+    "undercoverHint": "Protection complète en métal couvrant tout le corps"
+  },
+  {
+    "civil": "Catapulte",
+    "undercover": "Baliste",
+    "civilHint": "Machine de guerre lançant des projectiles avec une cuillère",
+    "undercoverHint": "Machine de guerre lançant des traits comme une arbalète géante"
+  },
+  {
+    "civil": "Cimetière",
+    "undercover": "Nécropole",
+    "civilHint": "Lieu d'inhumation des morts en ville ou à la campagne",
+    "undercoverHint": "Vaste site funéraire antique avec tombeaux et monuments"
+  },
+  {
+    "civil": "Lanterne",
+    "undercover": "Lampe à huile",
+    "civilHint": "Boîtier protégé abritant une bougie pour éclairer dehors",
+    "undercoverHint": "Récipient avec mèche brûlant de l'huile pour s'éclairer"
+  },
+  {
+    "civil": "Mappemonde",
+    "undercover": "Globe terrestre",
+    "civilHint": "Représentation plate de la Terre en deux cercles",
+    "undercoverHint": "Représentation sphérique de la Terre en volume"
+  },
+  {
+    "civil": "Pendentif",
+    "undercover": "Amulette",
+    "civilHint": "Bijou suspendu à un collier pour l'esthétique",
+    "undercoverHint": "Objet porté pour porter chance ou éloigner le mauvais œil"
+  },
+  {
+    "civil": "Sonar",
+    "undercover": "Radar",
+    "civilHint": "Système de détection sous-marine par ondes sonores",
+    "undercoverHint": "Système de détection aérienne ou maritime par ondes radio"
+  },
+  {
+    "civil": "Serre",
+    "undercover": "Orangerie",
+    "civilHint": "Construction vitrée pour cultiver les plantes hors saison",
+    "undercoverHint": "Bâtiment élégant abritant les arbustes méditerranéens en hiver"
+  },
+  {
+    "civil": "Pigeonnier",
+    "undercover": "Poulailler",
+    "civilHint": "Petite construction abritant des pigeons voyageurs",
+    "undercoverHint": "Enclos abritant des poules pondeuses dans une ferme"
+  },
+  {
+    "civil": "Moulin à vent",
+    "undercover": "Moulin à eau",
+    "civilHint": "Bâtiment utilisant le vent pour moudre le grain",
+    "undercoverHint": "Bâtiment utilisant un cours d'eau pour moudre le grain"
+  },
+  {
+    "civil": "Coffre-fort",
+    "undercover": "Coffre à trésor",
+    "civilHint": "Armoire blindée à code pour sécuriser des objets de valeur",
+    "undercoverHint": "Vieux coffre en bois renforcé de métal des pirates"
+  },
+  {
+    "civil": "Tirelire",
+    "undercover": "Tirelire",
+    "civilHint": "Récipient fermé pour économiser des pièces de monnaie",
+    "undercoverHint": "Récipient fermé pour accumuler des pièces au fil du temps"
+  },
+  {
+    "civil": "Accordéon",
+    "undercover": "Harmonica",
+    "civilHint": "Instrument à soufflet joué avec les deux mains",
+    "undercoverHint": "Petit instrument à vent tenu et soufflé avec la bouche"
+  },
+  {
+    "civil": "Tambour",
+    "undercover": "Djembé",
+    "civilHint": "Instrument à percussion cylindrique battu avec des baguettes",
+    "undercoverHint": "Tambour africain en gobelet joué à mains nues"
+  },
+  {
+    "civil": "Harpe",
+    "undercover": "Lyre",
+    "civilHint": "Grand instrument à cordes verticales joué des deux mains",
+    "undercoverHint": "Petit instrument à cordes de l'Antiquité grecque"
+  },
+  {
+    "civil": "Flûte à bec",
+    "undercover": "Flûte traversière",
+    "civilHint": "Instrument à vent tenu droit soufflé par le bout",
+    "undercoverHint": "Instrument à vent tenu horizontalement soufflé de côté"
+  },
+  {
+    "civil": "Cor de chasse",
+    "undercover": "Tuba",
+    "civilHint": "Instrument en cuivre circulaire utilisé à la chasse",
+    "undercoverHint": "Grand instrument en cuivre grave de l'orchestre"
+  },
+  {
+    "civil": "Banjo",
+    "undercover": "Mandoline",
+    "civilHint": "Instrument à cordes avec une caisse ronde et membrane",
+    "undercoverHint": "Petit instrument à cordes doublées d'origine italienne"
+  },
+  {
+    "civil": "Maracas",
+    "undercover": "Castagnettes",
+    "civilHint": "Instrument de percussion latin agité dans chaque main",
+    "undercoverHint": "Instrument de percussion espagnol claqué entre les doigts"
+  },
+  {
+    "civil": "Xylophone",
+    "undercover": "Marimba",
+    "civilHint": "Instrument à lames de bois frappées avec des maillets",
+    "undercoverHint": "Grand instrument à lames de bois avec des résonateurs"
+  },
+  {
+    "civil": "Ambulance",
+    "undercover": "Hélicoptère médicalisé",
+    "civilHint": "Véhicule terrestre d'urgence médicale avec sirène",
+    "undercoverHint": "Aéronef d'urgence médicale pour les zones inaccessibles"
+  },
+  {
+    "civil": "Pompier",
+    "undercover": "Démineur",
+    "civilHint": "Professionnel luttant contre les incendies",
+    "undercoverHint": "Professionnel neutralisant les engins explosifs"
+  },
+  {
+    "civil": "Sous-marin",
+    "undercover": "Bathyscaphe",
+    "civilHint": "Navire militaire navigant sous la surface de l'eau",
+    "undercoverHint": "Engin scientifique d'exploration des grandes profondeurs"
+  },
+  {
+    "civil": "Carriole",
+    "undercover": "Diligence",
+    "civilHint": "Petite charrette tirée par un cheval",
+    "undercoverHint": "Grande voiture à cheval transportant voyageurs et courrier"
+  },
+  {
+    "civil": "Trampoliner",
+    "undercover": "Saut en hauteur",
+    "civilHint": "Discipline gymnique sur toile élastique rebondissante",
+    "undercoverHint": "Discipline d'athlétisme sautant par-dessus une barre horizontale"
+  },
+  {
+    "civil": "Parachutisme",
+    "undercover": "Base jump",
+    "civilHint": "Saut en chute libre depuis un avion avec un parachute",
+    "undercoverHint": "Saut depuis une falaise ou immeuble avec ouverture rapide"
+  },
+  {
+    "civil": "Hoverboard",
+    "undercover": "Gyropode",
+    "civilHint": "Planche à deux roues auto-équilibrée pour se déplacer",
+    "undercoverHint": "Engin à deux roues avec guidon auto-équilibré"
+  },
+  {
+    "civil": "Câble",
+    "undercover": "Fiber optique",
+    "civilHint": "Conducteur métallique transmettant l'électricité ou les données",
+    "undercoverHint": "Filament en verre transmettant des données par la lumière"
+  },
+  {
+    "civil": "Fax",
+    "undercover": "Email",
+    "civilHint": "Transmission de documents par ligne téléphonique",
+    "undercoverHint": "Transmission de messages et fichiers par internet"
+  },
+  {
+    "civil": "Aqueduc",
+    "undercover": "Pipeline",
+    "civilHint": "Ouvrage antique acheminant l'eau par gravité",
+    "undercoverHint": "Canalisation moderne transportant pétrole ou gaz"
+  },
+  {
+    "civil": "Phénix",
+    "undercover": "Dragon",
+    "civilHint": "Oiseau mythique renaissant de ses cendres",
+    "undercoverHint": "Créature mythique crachant du feu avec des ailes"
+  },
+  {
+    "civil": "Licorne",
+    "undercover": "Pégase",
+    "civilHint": "Cheval magique avec une corne sur le front",
+    "undercoverHint": "Cheval mythologique aux ailes blanches qui vole"
+  },
+  {
+    "civil": "Sphinx",
+    "undercover": "Minotaure",
+    "civilHint": "Créature mi-lion mi-homme posant des énigmes",
+    "undercoverHint": "Créature mi-homme mi-taureau enfermée dans un labyrinthe"
+  },
+  {
+    "civil": "Sirène",
+    "undercover": "Naïade",
+    "civilHint": "Être mythologique mi-femme mi-poisson des océans",
+    "undercoverHint": "Nymphe habitant les rivières et sources dans la mythologie"
+  },
+  {
+    "civil": "Troll",
+    "undercover": "Ogre",
+    "civilHint": "Créature du folklore scandinave vivant sous les ponts",
+    "undercoverHint": "Géant féroce du folklore mangeant les enfants"
+  },
+  {
+    "civil": "Elfe",
+    "undercover": "Lutin",
+    "civilHint": "Être fantastique élancé aux oreilles pointues agile et sage",
+    "undercoverHint": "Petit être espiègle et malicieux des contes"
+  },
+  {
+    "civil": "Vampire",
+    "undercover": "Zombie",
+    "civilHint": "Créature nocturne se nourrissant de sang humain",
+    "undercoverHint": "Mort-vivant errant à la recherche de cerveaux"
+  },
+  {
+    "civil": "Fantôme",
+    "undercover": "Spectre",
+    "civilHint": "Esprit d'un mort sous forme translucide et blanche",
+    "undercoverHint": "Apparition d'un défunt souvent maléfique et sombre"
+  }
+]
