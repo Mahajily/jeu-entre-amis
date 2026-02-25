@@ -79,25 +79,6 @@ function hasFemaleTarget(players, currentId, couples, siblings) {
   return pool.some((p) => p.gender === 'F')
 }
 
-// Détecte si le joueur masculin n'a que des hommes comme cibles disponibles
-function hasFemaleTarget(players, currentId, couples, siblings) {
-  const partnerPair = couples.find(([a, b]) => a === currentId || b === currentId)
-  const partnerId = partnerPair
-    ? partnerPair[0] === currentId ? partnerPair[1] : partnerPair[0]
-    : null
-  // S'il a un(e) partenaire, l'action ira toujours vers lui/elle
-  if (partnerId) {
-    const partner = players.find((p) => p.id === partnerId)
-    return partner?.gender === 'F'
-  }
-  const siblingPair = siblings.find(([a, b]) => a === currentId || b === currentId)
-  const siblingId = siblingPair
-    ? siblingPair[0] === currentId ? siblingPair[1] : siblingPair[0]
-    : null
-  const pool = players.filter((p) => p.id !== currentId && p.id !== siblingId)
-  return pool.some((p) => p.gender === 'F')
-}
-
 const usedIds = new Set()
 const usedMmIds = new Set()
 
