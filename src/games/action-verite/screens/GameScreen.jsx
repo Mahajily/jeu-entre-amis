@@ -40,7 +40,7 @@ function pickTarget(players, currentId, currentGender, couples, siblings, gender
   return pool[Math.floor(Math.random() * pool.length)]
 }
 
-function resolveText(template, players, currentPlayer, couples, siblings) {
+function resolveText(template, players, currentPlayer, couples, siblings, preselectedTarget = null) {
   let text = template
   const patterns = [
     { key: '{{joueur}}', gender: null },
@@ -49,7 +49,10 @@ function resolveText(template, players, currentPlayer, couples, siblings) {
   ]
   for (const { key, gender } of patterns) {
     if (text.includes(key)) {
-      const t = pickTarget(players, currentPlayer.id, currentPlayer.gender, couples, siblings, gender)
+      // For {{joueur}} use the pre-selected target if provided
+      const t = (preselectedTarget && key === '{{joueur}}')
+        ? preselectedTarget
+        : pickTarget(players, currentPlayer.id, currentPlayer.gender, couples, siblings, gender)
       const escaped = key.replace(/[{}]/g, '\\$&')
       text = text.replace(new RegExp(escaped, 'g'), t ? t.name : 'quelqu\'un')
     }
@@ -76,11 +79,30 @@ function hasFemaleTarget(players, currentId, couples, siblings) {
   return pool.some((p) => p.gender === 'F')
 }
 
+// Détecte si le joueur masculin n'a que des hommes comme cibles disponibles
+function hasFemaleTarget(players, currentId, couples, siblings) {
+  const partnerPair = couples.find(([a, b]) => a === currentId || b === currentId)
+  const partnerId = partnerPair
+    ? partnerPair[0] === currentId ? partnerPair[1] : partnerPair[0]
+    : null
+  // S'il a un(e) partenaire, l'action ira toujours vers lui/elle
+  if (partnerId) {
+    const partner = players.find((p) => p.id === partnerId)
+    return partner?.gender === 'F'
+  }
+  const siblingPair = siblings.find(([a, b]) => a === currentId || b === currentId)
+  const siblingId = siblingPair
+    ? siblingPair[0] === currentId ? siblingPair[1] : siblingPair[0]
+    : null
+  const pool = players.filter((p) => p.id !== currentId && p.id !== siblingId)
+  return pool.some((p) => p.gender === 'F')
+}
+
 const usedIds = new Set()
 const usedMmIds = new Set()
 
 function pickQuestion(modes, type, customExtras = [], mToM = false) {
-  // Groupe 100% masculin + action : utiliser le pool H→H intime
+  // Cible masculine → pool MM_ACTIONS (même en groupe mixte)
   if (type === 'action' && mToM) {
     const pool = MM_ACTIONS.map((text, i) => ({ text, id: `mm-${i}`, mode: 'soft' }))
     const available = pool.filter((q) => !usedMmIds.has(q.id))
@@ -126,16 +148,22 @@ export default function GameScreen({ config, onHome }) {
   /* ── choice handler ── */
   const handleChoice = useCallback((type) => {
     const actualType = forceAction ? 'action' : type
-    const mToM = actualType === 'action'
-      && currentPlayer.gender === 'M'
-      && !hasFemaleTarget(players, currentPlayer.id, couples, siblings)
+
+    // Pré-sélectionner la cible : si elle est H → MM_ACTIONS, si F → pool normal
+    let preselectedTarget = null
+    let mToM = false
+    if (actualType === 'action') {
+      preselectedTarget = pickTarget(players, currentPlayer.id, currentPlayer.gender, couples, siblings, null)
+      mToM = preselectedTarget?.gender === 'M'
+    }
+
     const q = pickQuestion(modes, actualType, customQuestions, mToM)
     if (!q) return
-    q.resolvedText = resolveText(q.text, players, currentPlayer, couples, siblings)
+    q.resolvedText = resolveText(q.text, players, currentPlayer, couples, siblings, preselectedTarget)
     setChoiceType(actualType)
     setCurrentQ(q)
     setPhase('question')
-  }, [forceAction, modes, players, currentPlayer, couples])
+  }, [forceAction, modes, players, currentPlayer, couples, siblings])
 
   /* ── after question done ── */
   const handleDone = () => {
