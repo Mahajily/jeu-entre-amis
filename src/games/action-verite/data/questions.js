@@ -255,7 +255,6 @@ export const MODE_META = {
 }
 
 export const GENDER_META = {
-  M: { label: 'H', icon: '♂', color: '#0984e3' },
-  F: { label: 'F', icon: '♀', color: '#e84393' },
-  NB: { label: 'NB', icon: '⚧', color: '#8e44ad' },
+  M: { label: 'Homme', icon: '♂', color: '#0984e3' },
+  F: { label: 'Femme', icon: '♀', color: '#e84393' },
 }

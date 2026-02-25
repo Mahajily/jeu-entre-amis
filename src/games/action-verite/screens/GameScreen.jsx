@@ -5,7 +5,7 @@ import { QUESTIONS, MODE_META, GENDER_META } from '../data/questions'
 
 /* ─── helpers ─────────────────────────────────────────── */
 
-function pickTarget(players, currentId, couples, gender = null) {
+function pickTarget(players, currentId, currentGender, couples, gender = null) {
   const partnerPair = couples.find(([a, b]) => a === currentId || b === currentId)
   const partnerId = partnerPair
     ? partnerPair[0] === currentId ? partnerPair[1] : partnerPair[0]
@@ -14,6 +14,12 @@ function pickTarget(players, currentId, couples, gender = null) {
   let pool = players.filter((p) => p.id !== currentId && p.id !== partnerId)
   if (pool.length === 0) pool = players.filter((p) => p.id !== currentId)
   if (pool.length === 0) pool = players
+
+  // Actions entre hommes interdites : un joueur masculin ne cible que les femmes
+  if (!gender && currentGender === 'M') {
+    const fPool = pool.filter((p) => p.gender === 'F')
+    if (fPool.length > 0) pool = fPool
+  }
 
   if (gender) {
     const gPool = pool.filter((p) => p.gender === gender)
@@ -31,7 +37,7 @@ function resolveText(template, players, currentPlayer, couples) {
   ]
   for (const { key, gender } of patterns) {
     if (text.includes(key)) {
-      const t = pickTarget(players, currentPlayer.id, couples, gender)
+      const t = pickTarget(players, currentPlayer.id, currentPlayer.gender, couples, gender)
       const escaped = key.replace(/[{}]/g, '\\$&')
       text = text.replace(new RegExp(escaped, 'g'), t ? t.name : 'quelqu\'un')
     }
