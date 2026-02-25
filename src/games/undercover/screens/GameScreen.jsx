@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Eye, Vote, ChevronRight, LogOut, Info } from 'lucide-react'
+import { Eye, Vote, ChevronRight, LogOut, Info, Shuffle } from 'lucide-react'
 import { assignRoles, checkWin, getInitials, getAvatarGradient } from '../utils/gameLogic'
 
 const fadeIn = {
@@ -10,6 +10,15 @@ const fadeIn = {
   transition: { duration: 0.3 },
 }
 
+function shuffle(arr) {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 export default function GameScreen({ config, onEnd, onQuit }) {
   const [players, setPlayers] = useState(() => config.players.map(p => ({ ...p })))
   const [round, setRound] = useState(1)
@@ -17,9 +26,15 @@ export default function GameScreen({ config, onEnd, onQuit }) {
   // Phase: 'distribute' | 'discuss' | 'eliminate' | 'eliminated'
   const [phase, setPhase] = useState('distribute')
 
-  // Distribution
+  // Distribution — shuffled order
+  const [distributeOrder, setDistributeOrder] = useState(() =>
+    shuffle(config.players.map(p => p.id))
+  )
   const [viewIndex, setViewIndex] = useState(0)
   const [wordVisible, setWordVisible] = useState(false)
+
+  // Discussion — separate shuffled order shown during discussion phase
+  const [speakOrder, setSpeakOrder] = useState([])
 
   // Elimination
   const [selectedTarget, setSelectedTarget] = useState(null)
@@ -35,6 +50,10 @@ export default function GameScreen({ config, onEnd, onQuit }) {
   )
 
   const alivePlayers = players.filter(p => p.alive)
+  // Players in the shuffled distribute order (alive only)
+  const orderedPlayers = distributeOrder
+    .map(id => alivePlayers.find(p => p.id === id))
+    .filter(Boolean)
 
   /* ─── Distribution ─── */
   function showWord() {
@@ -44,9 +63,11 @@ export default function GameScreen({ config, onEnd, onQuit }) {
   function nextPlayer() {
     setWordVisible(false)
     setShowHint(false)
-    if (viewIndex + 1 < alivePlayers.length) {
+    if (viewIndex + 1 < orderedPlayers.length) {
       setViewIndex(viewIndex + 1)
     } else {
+      // Generate a NEW random speak order for discussion (different shuffle)
+      setSpeakOrder(shuffle(alivePlayers.map(p => p.id)))
       setPhase('discuss')
     }
   }
@@ -67,7 +88,9 @@ export default function GameScreen({ config, onEnd, onQuit }) {
       onEnd({ winner, pair, assignments, players: updated })
       return
     }
+    const nextAlive = updated.filter(p => p.alive).map(p => p.id)
     setRound(r => r + 1)
+    setDistributeOrder(shuffle(nextAlive))
     setViewIndex(0)
     setWordVisible(false)
     setEliminatedId(null)
@@ -93,8 +116,8 @@ export default function GameScreen({ config, onEnd, onQuit }) {
       {phase === 'distribute' && (
         <AnimatePresence mode="wait">
           <motion.div key={viewIndex} className="section reveal-card" {...fadeIn}>
-            <p className="player-turn">Joueur {viewIndex + 1} / {alivePlayers.length}</p>
-            <p className="player-name-big">{alivePlayers[viewIndex]?.name}</p>
+            <p className="player-turn">Joueur {viewIndex + 1} / {orderedPlayers.length}</p>
+            <p className="player-name-big">{orderedPlayers[viewIndex]?.name}</p>
 
             {!wordVisible ? (
               <>
@@ -112,8 +135,8 @@ export default function GameScreen({ config, onEnd, onQuit }) {
             ) : (
               <>
                 <div className="word-box">
-                  <span className="word">{assignments[alivePlayers[viewIndex]?.id]?.word}</span>
-                  {assignments[alivePlayers[viewIndex]?.id]?.hint && (
+                  <span className="word">{assignments[orderedPlayers[viewIndex]?.id]?.word}</span>
+                  {assignments[orderedPlayers[viewIndex]?.id]?.hint && (
                     <button
                       className="hint-toggle"
                       onClick={() => setShowHint(h => !h)}
@@ -124,7 +147,7 @@ export default function GameScreen({ config, onEnd, onQuit }) {
                   )}
                 </div>
                 <AnimatePresence>
-                  {showHint && assignments[alivePlayers[viewIndex]?.id]?.hint && (
+                  {showHint && assignments[orderedPlayers[viewIndex]?.id]?.hint && (
                     <motion.div
                       className="hint-bubble"
                       initial={{ opacity: 0, y: -8, scale: 0.95 }}
@@ -132,7 +155,7 @@ export default function GameScreen({ config, onEnd, onQuit }) {
                       exit={{ opacity: 0, y: -8, scale: 0.95 }}
                       transition={{ duration: 0.2 }}
                     >
-                      💡 {assignments[alivePlayers[viewIndex]?.id]?.hint}
+                      💡 {assignments[orderedPlayers[viewIndex]?.id]?.hint}
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -152,13 +175,40 @@ export default function GameScreen({ config, onEnd, onQuit }) {
       {/* ─── DISCUSS ─── */}
       {phase === 'discuss' && (
         <motion.div className="section" {...fadeIn}>
-          <div className="text-center" style={{ padding: '32px 0' }}>
-            <p style={{ fontSize: '3rem', marginBottom: 12 }}>💬</p>
-            <h3 style={{ fontWeight: 800, marginBottom: 8 }}>Discussion</h3>
-            <p className="text-muted text-sm" style={{ maxWidth: 300, margin: '0 auto 24px' }}>
-              Chaque joueur donne un indice sur son mot.
-              Discutez et débattez pour trouver l'imposteur !
-            </p>
+          <div style={{ padding: '24px 0' }}>
+            <div className="text-center" style={{ marginBottom: 20 }}>
+              <p style={{ fontSize: '2.4rem', marginBottom: 8 }}>💬</p>
+              <h3 style={{ fontWeight: 800, marginBottom: 6 }}>Discussion</h3>
+              <p className="text-muted text-sm">
+                Chaque joueur donne un indice sur son mot.
+              </p>
+            </div>
+
+            {/* Speak order */}
+            <div className="glass" style={{ padding: '14px 16px', marginBottom: 20 }}>
+              <div className="flex items-center gap-2" style={{ marginBottom: 10 }}>
+                <Shuffle size={14} style={{ color: 'var(--accent-light)' }} />
+                <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--accent-light)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Ordre de parole</span>
+              </div>
+              <div className="flex-col gap-2">
+                {speakOrder.map((id, i) => {
+                  const p = alivePlayers.find(pl => pl.id === id)
+                  if (!p) return null
+                  return (
+                    <div key={id} className="flex items-center gap-3" style={{ padding: '8px 0' }}>
+                      <div style={{
+                        width: 24, height: 24, borderRadius: 6,
+                        background: 'var(--accent)', color: '#fff',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        fontSize: '0.75rem', fontWeight: 800, flexShrink: 0
+                      }}>{i + 1}</div>
+                      <span style={{ fontWeight: 600 }}>{p.name}</span>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+
             <button className="btn btn-primary btn-block" onClick={() => { setSelectedTarget(null); setPhase('eliminate') }}>
               <Vote size={18} /> Passer à l'élimination
             </button>
