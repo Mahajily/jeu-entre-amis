@@ -1,17 +1,29 @@
 import { useState, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Home, ChevronRight, RotateCcw } from 'lucide-react'
-import { QUESTIONS, MODE_META, GENDER_META } from '../data/questions'
+import { QUESTIONS, MM_ACTIONS, MODE_META, GENDER_META } from '../data/questions'
 
 /* ─── helpers ─────────────────────────────────────────── */
 
-function pickTarget(players, currentId, currentGender, couples, gender = null) {
+function pickTarget(players, currentId, currentGender, couples, siblings, gender = null) {
   const partnerPair = couples.find(([a, b]) => a === currentId || b === currentId)
   const partnerId = partnerPair
     ? partnerPair[0] === currentId ? partnerPair[1] : partnerPair[0]
     : null
 
-  let pool = players.filter((p) => p.id !== currentId && p.id !== partnerId)
+  const siblingPair = siblings.find(([a, b]) => a === currentId || b === currentId)
+  const siblingId = siblingPair
+    ? siblingPair[0] === currentId ? siblingPair[1] : siblingPair[0]
+    : null
+
+  // Couples : l'action tombe toujours sur le/la partenaire
+  if (partnerId) {
+    const partner = players.find((p) => p.id === partnerId)
+    if (partner) return partner
+  }
+
+  // Pool sans soi-même et sans frère/sœur
+  let pool = players.filter((p) => p.id !== currentId && p.id !== siblingId)
   if (pool.length === 0) pool = players.filter((p) => p.id !== currentId)
   if (pool.length === 0) pool = players
 
@@ -28,7 +40,7 @@ function pickTarget(players, currentId, currentGender, couples, gender = null) {
   return pool[Math.floor(Math.random() * pool.length)]
 }
 
-function resolveText(template, players, currentPlayer, couples) {
+function resolveText(template, players, currentPlayer, couples, siblings) {
   let text = template
   const patterns = [
     { key: '{{joueur}}', gender: null },
@@ -37,7 +49,7 @@ function resolveText(template, players, currentPlayer, couples) {
   ]
   for (const { key, gender } of patterns) {
     if (text.includes(key)) {
-      const t = pickTarget(players, currentPlayer.id, currentPlayer.gender, couples, gender)
+      const t = pickTarget(players, currentPlayer.id, currentPlayer.gender, couples, siblings, gender)
       const escaped = key.replace(/[{}]/g, '\\$&')
       text = text.replace(new RegExp(escaped, 'g'), t ? t.name : 'quelqu\'un')
     }
@@ -45,9 +57,39 @@ function resolveText(template, players, currentPlayer, couples) {
   return text
 }
 
-const usedIds = new Set()
+// Détecte si le joueur masculin n'a que des hommes comme cibles disponibles
+function hasFemaleTarget(players, currentId, couples, siblings) {
+  const partnerPair = couples.find(([a, b]) => a === currentId || b === currentId)
+  const partnerId = partnerPair
+    ? partnerPair[0] === currentId ? partnerPair[1] : partnerPair[0]
+    : null
+  // S'il a un(e) partenaire, l'action ira toujours vers lui/elle
+  if (partnerId) {
+    const partner = players.find((p) => p.id === partnerId)
+    return partner?.gender === 'F'
+  }
+  const siblingPair = siblings.find(([a, b]) => a === currentId || b === currentId)
+  const siblingId = siblingPair
+    ? siblingPair[0] === currentId ? siblingPair[1] : siblingPair[0]
+    : null
+  const pool = players.filter((p) => p.id !== currentId && p.id !== siblingId)
+  return pool.some((p) => p.gender === 'F')
+}
 
-function pickQuestion(modes, type, customExtras = []) {
+const usedIds = new Set()
+const usedMmIds = new Set()
+
+function pickQuestion(modes, type, customExtras = [], mToM = false) {
+  // Groupe 100% masculin + action : utiliser le pool H→H intime
+  if (type === 'action' && mToM) {
+    const pool = MM_ACTIONS.map((text, i) => ({ text, id: `mm-${i}`, mode: 'soft' }))
+    const available = pool.filter((q) => !usedMmIds.has(q.id))
+    const source = available.length > 0 ? available : pool
+    if (available.length === 0) usedMmIds.clear()
+    const q = source[Math.floor(Math.random() * source.length)]
+    if (q) usedMmIds.add(q.id)
+    return q || null
+  }
   const pool = []
   for (const mode of modes) {
     const qs = QUESTIONS[mode]?.[type] || []
@@ -67,7 +109,7 @@ function pickQuestion(modes, type, customExtras = []) {
 /* ─── component ───────────────────────────────────────── */
 
 export default function GameScreen({ config, onHome }) {
-  const { modes, players, couples, customQuestions = [] } = config
+  const { modes, players, couples, siblings = [], customQuestions = [] } = config
 
   // phases: 'who' | 'choice' | 'question' | 'end'
   const [phase, setPhase] = useState('who')
@@ -84,9 +126,12 @@ export default function GameScreen({ config, onHome }) {
   /* ── choice handler ── */
   const handleChoice = useCallback((type) => {
     const actualType = forceAction ? 'action' : type
-    const q = pickQuestion(modes, actualType, customQuestions)
+    const mToM = actualType === 'action'
+      && currentPlayer.gender === 'M'
+      && !hasFemaleTarget(players, currentPlayer.id, couples, siblings)
+    const q = pickQuestion(modes, actualType, customQuestions, mToM)
     if (!q) return
-    q.resolvedText = resolveText(q.text, players, currentPlayer, couples)
+    q.resolvedText = resolveText(q.text, players, currentPlayer, couples, siblings)
     setChoiceType(actualType)
     setCurrentQ(q)
     setPhase('question')

@@ -1616,6 +1616,17 @@ body::before {
   border: 1px solid rgba(232, 67, 147, 0.25);
 }
 
+.av-sibling-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #f39c12;
+  white-space: nowrap;
+  padding: 2px 8px;
+  border-radius: 99px;
+  background: rgba(243, 156, 18, 0.12);
+  border: 1px solid rgba(243, 156, 18, 0.25);
+}
+
 .av-player-actions {
   display: flex;
   gap: 4px;
@@ -1639,6 +1650,7 @@ body::before {
 
 .av-icon-btn:hover { background: rgba(255,255,255,0.08); color: var(--text-primary); }
 .av-icon-btn--danger:hover { background: rgba(214,48,49,0.15); color: #d63031; border-color: rgba(214,48,49,0.3); }
+.av-icon-btn--sibling:hover { background: rgba(243,156,18,0.15); color: #f39c12; border-color: rgba(243,156,18,0.3); }
 
 /* Couple section */
 .av-couple-section {
@@ -1667,6 +1679,17 @@ body::before {
 .av-couple-add-btn:hover {
   background: rgba(232, 67, 147, 0.14);
   border-color: rgba(232, 67, 147, 0.6);
+}
+
+.av-sibling-add-btn {
+  border-color: rgba(243, 156, 18, 0.4);
+  background: rgba(243, 156, 18, 0.07);
+  color: #f39c12;
+}
+
+.av-sibling-add-btn:hover {
+  background: rgba(243, 156, 18, 0.14);
+  border-color: rgba(243, 156, 18, 0.6);
 }
 
 .av-couple-form {
@@ -1740,6 +1763,14 @@ body::before {
 
 .av-couple-chip button:hover { opacity: 1; }
 
+.av-sibling-chip {
+  background: rgba(243, 156, 18, 0.12);
+  border-color: rgba(243, 156, 18, 0.3);
+  color: #f39c12;
+}
+
+.av-sibling-chip button { color: #f39c12; }
+
 /* Rule banner */
 .av-rule-banner {
   display: flex;
@@ -1759,6 +1790,7 @@ body::before {
 
 .av-rule-text strong { color: var(--text-secondary); }
 .av-rule-text--couple { color: #e84393; background: rgba(232,67,147,0.07); }
+.av-rule-text--sibling { color: #f39c12; background: rgba(243,156,18,0.07); }
 
 /* ── Game screen ── */
 .av-game-screen {

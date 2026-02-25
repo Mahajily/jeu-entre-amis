@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { ChevronLeft, UserPlus, X, Play, Heart, HeartOff, Upload, FileDown, Trash2 } from 'lucide-react'
+import { ChevronLeft, UserPlus, X, Play, Heart, HeartOff, Upload, FileDown, Trash2, Users } from 'lucide-react'
 import * as XLSX from 'xlsx'
 import { MODE_META, GENDER_META } from '../data/questions'
 
@@ -13,6 +13,10 @@ export default function SetupScreen({ onStart, onBack }) {
   const [coupleA, setCoupleA] = useState('')
   const [coupleB, setCoupleB] = useState('')
   const [showCoupleForm, setShowCoupleForm] = useState(false)
+  const [siblings, setSiblings] = useState([]) // [[id1, id2], ...]
+  const [siblingA, setSiblingA] = useState('')
+  const [siblingB, setSiblingB] = useState('')
+  const [showSiblingForm, setShowSiblingForm] = useState(false)
   const [customQuestions, setCustomQuestions] = useState([])
   const [importError, setImportError] = useState('')
   const fileRef = useRef(null)
@@ -43,6 +47,7 @@ export default function SetupScreen({ onStart, onBack }) {
   const removePlayer = (id) => {
     setPlayers((prev) => prev.filter((p) => p.id !== id))
     setCouples((prev) => prev.filter(([a, b]) => a !== id && b !== id))
+    setSiblings((prev) => prev.filter(([a, b]) => a !== id && b !== id))
   }
 
   /* ── Couples ── */
@@ -69,6 +74,29 @@ export default function SetupScreen({ onStart, onBack }) {
 
   const removeCouple = (id) => {
     setCouples((prev) => prev.filter(([a, b]) => a !== id && b !== id))
+  }
+
+  /* ── Siblings ── */
+  const getSibling = (id) => {
+    const pair = siblings.find(([a, b]) => a === id || b === id)
+    if (!pair) return null
+    const sibId = pair[0] === id ? pair[1] : pair[0]
+    return players.find((p) => p.id === sibId)
+  }
+
+  const addSibling = () => {
+    if (!siblingA || !siblingB || siblingA === siblingB) return
+    setSiblings((prev) => [
+      ...prev.filter(([a, b]) => a !== siblingA && b !== siblingA && a !== siblingB && b !== siblingB),
+      [siblingA, siblingB],
+    ])
+    setSiblingA('')
+    setSiblingB('')
+    setShowSiblingForm(false)
+  }
+
+  const removeSibling = (id) => {
+    setSiblings((prev) => prev.filter(([a, b]) => a !== id && b !== id))
   }
 
   /* ── Import ── */
@@ -153,7 +181,7 @@ export default function SetupScreen({ onStart, onBack }) {
   const canStart = players.length >= 2
 
   const handleStart = () => {
-    onStart({ modes: Array.from(selectedModes), players, couples, customQuestions })
+    onStart({ modes: Array.from(selectedModes), players, couples, siblings, customQuestions })
   }
 
   return (
@@ -241,6 +269,7 @@ export default function SetupScreen({ onStart, onBack }) {
             <div className="av-player-list">
               {players.map((p, i) => {
                 const partner = getPartner(p.id)
+                const sibling = getSibling(p.id)
                 const gMeta = GENDER_META[p.gender]
                 return (
                   <div key={p.id} className="av-player-item">
@@ -258,13 +287,23 @@ export default function SetupScreen({ onStart, onBack }) {
                           💑 {partner.name}
                         </span>
                       )}
+                      {sibling && (
+                        <span className="av-sibling-tag">
+                          👫 {sibling.name}
+                        </span>
+                      )}
                     </div>
                     <div className="av-player-actions">
-                      {partner ? (
+                      {partner && (
                         <button className="av-icon-btn av-icon-btn--danger" onClick={() => removeCouple(p.id)} title="Supprimer le couple">
                           <HeartOff size={14} />
                         </button>
-                      ) : null}
+                      )}
+                      {sibling && (
+                        <button className="av-icon-btn av-icon-btn--sibling" onClick={() => removeSibling(p.id)} title="Supprimer frère/sœur">
+                          <Users size={14} />
+                        </button>
+                      )}
                       <button className="av-icon-btn" onClick={() => removePlayer(p.id)}>
                         <X size={14} />
                       </button>
@@ -345,6 +384,77 @@ export default function SetupScreen({ onStart, onBack }) {
               )}
             </div>
           )}
+
+          {/* Siblings section */}
+          {players.length >= 2 && (
+            <div className="av-couple-section">
+              {!showSiblingForm ? (
+                <button className="av-couple-add-btn av-sibling-add-btn" onClick={() => setShowSiblingForm(true)}>
+                  <Users size={14} /> Marquer frère / sœur
+                </button>
+              ) : (
+                <motion.div
+                  className="av-couple-form"
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                >
+                  <p className="av-couple-form-label">👫 Ils sont frère et sœur :</p>
+                  <div className="av-couple-selects">
+                    <select
+                      className="input av-couple-select"
+                      value={siblingA}
+                      onChange={(e) => setSiblingA(e.target.value)}
+                    >
+                      <option value="">Joueur A</option>
+                      {players.map((p) => (
+                        <option key={p.id} value={p.id}>{p.name}</option>
+                      ))}
+                    </select>
+                    <span className="av-couple-heart">👫</span>
+                    <select
+                      className="input av-couple-select"
+                      value={siblingB}
+                      onChange={(e) => setSiblingB(e.target.value)}
+                    >
+                      <option value="">Joueur B</option>
+                      {players.filter(p => p.id !== siblingA).map((p) => (
+                        <option key={p.id} value={p.id}>{p.name}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="av-couple-form-actions">
+                    <button
+                      className="btn btn-primary"
+                      onClick={addSibling}
+                      disabled={!siblingA || !siblingB || siblingA === siblingB}
+                    >
+                      Confirmer
+                    </button>
+                    <button className="btn btn--secondary" onClick={() => { setShowSiblingForm(false); setSiblingA(''); setSiblingB('') }}>
+                      Annuler
+                    </button>
+                  </div>
+                </motion.div>
+              )}
+
+              {siblings.length > 0 && (
+                <div className="av-couple-list">
+                  {siblings.map(([aId, bId]) => {
+                    const a = players.find(p => p.id === aId)
+                    const b = players.find(p => p.id === bId)
+                    if (!a || !b) return null
+                    return (
+                      <div key={`sib-${aId}-${bId}`} className="av-couple-chip av-sibling-chip">
+                        <Users size={12} />
+                        {a.name} & {b.name}
+                        <button onClick={() => removeSibling(aId)}><X size={10} /></button>
+                      </div>
+                    )
+                  })}
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Info rule */}
@@ -354,7 +464,12 @@ export default function SetupScreen({ onStart, onBack }) {
           </p>
           {couples.length > 0 && (
             <p className="av-rule-text av-rule-text--couple">
-              💑 Les défis entre partenaires seront évités automatiquement.
+              💑 Les actions tombent automatiquement sur le/la partenaire.
+            </p>
+          )}
+          {siblings.length > 0 && (
+            <p className="av-rule-text av-rule-text--sibling">
+              👫 Les défis entre frères et sœurs seront évités automatiquement.
             </p>
           )}
         </div>

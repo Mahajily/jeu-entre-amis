@@ -258,3 +258,32 @@ export const GENDER_META = {
   M: { label: 'Homme', icon: '♂', color: '#0984e3' },
   F: { label: 'Femme', icon: '♀', color: '#e84393' },
 }
+
+// Actions spécifiques quand tous les joueurs disponibles sont des hommes
+export const MM_ACTIONS = [
+  "Bras de fer avec {{joueur}} — le perdant fait 10 pompes.",
+  "Fixe {{joueur}} dans les yeux sans sourire — premier qui craque a perdu et paie un gage.",
+  "Défi : {{joueur}} et toi, qui peut faire le plus de tractions / pompes en 30 secondes ?",
+  "Imite {{joueur}} sur 30 secondes — les autres thétre jugent la ressemblance.",
+  "Donne une étreinte de frère à {{joueur}} et dis-lui un truc sincère.",
+  "Essaie de faire craquer {{joueur}} en 1 minute (grimaces, blagues, bruits) — il ne doit pas sourire.",
+  "Toi vs {{joueur}} : chacun dit un mot, le premier qui bafouille ou répète a perdu.",
+  "Pierre-papier-ciseaux BO5 avec {{joueur}} — le perdant révèle un secret.",
+  "Raconte à voix haute la chose la plus embêrrassante que {{joueur}} ait jamais faite devant te groupe.",
+  "{{joueur}} te fixe et tu dois lui faire un compliment sincère sans rire ni détourner les yeux.",
+  "Toi et {{joueur}} vous dos-à-dos — au top, vous vous retournez et vous faites le duel de regards le plus intimidant possible.",
+  "Imite la démarche de {{joueur}} jusqu'à ce qu'il/elle la reconnaisse.",
+  "Toi vs {{joueur}} : 30 secondes de battle de danse, le groupe vote le gagnant.",
+  "Chante 20 secondes d'une chanson au choix de {{joueur}} — sans te tromper de paroles.",
+  "{{joueur}} te pose 3 questions, tu dois répondre 'oui' à tout avec le plus grand sérieux.",
+  "Convaincs {{joueur}} en 30 secondes que tu es le meilleur cuisinier / médecin / pilote du groupe.",
+  "Toi et {{joueur}} : battle d'accents — chacun parle 20 secondes dans l'accent choisi par le groupe.",
+  "Récite le texte d'une pub télé en le dédiant à {{joueur}} avec un regard de cinéma.",
+  "{{joueur}} choisit un défi sportif  (gainage, équilibre sur un pied, etc.) — tu as 30 secondes pour le tenir.",
+  "Improvise un discours de mariage de 30 secondes en l'honneur de {{joueur}}.",
+  "Fais la blague la plus nulle que tu connaisses à {{joueur}} — il doit réagir sans sourciller.",
+  "Toi vs {{joueur}} : lequel des deux brúle une chanson populaire au karaoké ? Le groupe choisit la chanson.",
+  "Dis à {{joueur}} ce que tu ferais s'il était ton chef au travail pendant un mois — sois honnête.",
+  "{{joueur}} choisit un personnage célèbre, tu dois l'imiter pendant 30 secondes.",
+  "Toi et {{joueur}} faites un concours : qui peut retenir son souffle le plus longtemps ?",
+]
