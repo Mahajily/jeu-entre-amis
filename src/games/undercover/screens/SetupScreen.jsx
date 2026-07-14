@@ -111,7 +111,7 @@ export default function SetupScreen({ onStart, savedPlayers = [], onBack }) {
   }
 
   function handleStart() {
-    if (players.length < 4) return
+    if (players.length < 3) return
     onStart({ players, nbUndercover, wordPool: buildWordPool() })
   }
 
@@ -192,9 +192,9 @@ export default function SetupScreen({ onStart, savedPlayers = [], onBack }) {
           </div>
         </div>
 
-        {players.length > 0 && players.length < 4 && (
+        {players.length > 0 && players.length < 3 && (
           <p className="text-sm mt-2" style={{ color: 'var(--warning)' }}>
-            Il faut au moins 4 joueurs pour commencer
+            Il faut au moins 3 joueurs pour commencer
           </p>
         )}
       </div>
@@ -350,7 +350,7 @@ export default function SetupScreen({ onStart, savedPlayers = [], onBack }) {
         <button
           className="btn btn-success btn-block"
           onClick={handleStart}
-          disabled={players.length < 4}
+          disabled={players.length < 3}
         >
           <Play size={18} />
           Lancer la partie

@@ -75,9 +75,21 @@ export default function GameScreen({ config, onEnd, onQuit }) {
   /* ─── Eliminate directly ─── */
   function confirmElimination() {
     if (!selectedTarget) return
+    const updated = players.map(p => p.id === selectedTarget ? { ...p, alive: false } : p)
+    setPlayers(updated)
     setEliminatedId(selectedTarget)
-    setPlayers(prev => prev.map(p => p.id === selectedTarget ? { ...p, alive: false } : p))
-    setPhase('eliminated')
+
+    const winner = checkWin(updated, assignments)
+    if (winner) {
+      // Game over → show eliminated screen with role reveal, then results
+      setPhase('eliminated')
+    } else {
+      // Game continues → skip role reveal, go straight to discussion
+      const nextAlive = updated.filter(p => p.alive)
+      setRound(r => r + 1)
+      setSpeakOrder(shuffle(nextAlive.map(p => p.id)))
+      setPhase('eliminated')
+    }
   }
 
   /* ─── After elimination ─── */
@@ -88,9 +100,7 @@ export default function GameScreen({ config, onEnd, onQuit }) {
       onEnd({ winner, pair, assignments, players: updated })
       return
     }
-    const nextAlive = updated.filter(p => p.alive)
-    setRound(r => r + 1)
-    setSpeakOrder(shuffle(nextAlive.map(p => p.id)))
+    // Already set up in confirmElimination, just switch phase
     setEliminatedId(null)
     setSelectedTarget(null)
     setPhase('discuss')
@@ -260,19 +270,24 @@ export default function GameScreen({ config, onEnd, onQuit }) {
         </motion.div>
       )}
 
-      {/* ─── ELIMINATED (show role, never the word) ─── */}
+      {/* ─── ELIMINATED ─── */}
       {phase === 'eliminated' && eliminatedId && (() => {
         const elim = players.find(p => p.id === eliminatedId)
         const role = assignments[eliminatedId]?.role
         const isUndercover = role === 'undercover'
+        const updated = players.map(p => p.id === eliminatedId ? { ...p, alive: false } : p)
+        const gameOver = !!checkWin(updated, assignments)
         return (
           <motion.div className="section result-screen" {...fadeIn}>
-            <p className="emoji">{isUndercover ? '🕵️' : '😇'}</p>
+            <p className="emoji">👋</p>
             <h2>{elim?.name}</h2>
             <p className="sub">a été éliminé(e)</p>
-            <div className={`role-badge ${isUndercover ? 'role-undercover' : 'role-civil'}`}>
-              {isUndercover ? '🔴 C\'était un Imposteur !' : '🟢 C\'était un Civil'}
-            </div>
+
+            {gameOver && (
+              <div className={`role-badge ${isUndercover ? 'role-undercover' : 'role-civil'}`}>
+                {isUndercover ? '🔴 C\'était un Imposteur !' : '🟢 C\'était un Civil'}
+              </div>
+            )}
 
             <button className="btn btn-primary btn-block mt-4" onClick={afterElimination}>
               Continuer <ChevronRight size={18} />
